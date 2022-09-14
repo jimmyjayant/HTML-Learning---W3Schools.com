@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Attributes 
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            HTML Attributes 
+        </h1>
+
+        <br>
+        
+        <p>
+            HTML Attributes provide additional information about HTML elements. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Attributes 
+        </h2>
+
+        <br>
+
+        <p>
+            <ul>
+                <li>All HTML elements can have <b>attributes</b> </li>
+                <li>Attributes provides <b>additional information</b> about the elements</li>
+                <li>Attributes are always specified in <b>the start tag</b></li>
+                <li>Attributes usually come in name/value pairs like: <b>name="value"</b></li>
+            </ul>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The href Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the url of the page the link goes to: 
+            <br>
+            Example:- 
+            <br>
+            <a href="https://www.w3schools.com">Visit W3Schools</a>
+            <br>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The src Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed: 
+            <br>
+            Example:- 
+            <br>
+            <img src="Image14.jpg" width="500" height="600">
+
+            <br>
+            <br>
+
+            There are two ways to specify the URL in the src attribute:- 
+            <br>
+            <b>1. Absolute URL - </b>Links to an external page that is hosted on another website. 
+            <br>
+            Example:- 
+            <br>
+            src="https://www.w3schools.com/images/img_girl.jpg"
+            <br>
+            <b>Notes: </b>External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. 
+            <br>
+            In addition, you cannot control external images; it can suddenly be removed or changed. 
+
+            <br>
+            <br>
+
+            <b>2. Relative URL - </b>Links to an image that is hosted within a website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. 
+            <br>
+            Example:- "img_girl.jpg" 
+            <br>
+            If the URL begins with a slash, it will be relative to the domain. 
+            <br>
+            Example:- "/images/img_girl.jpg" 
+            <br>
+            <br>
+            <b>Tip: </b>It is almost always best to use relative URLs. They will not break if you change domain. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The width and height Attributes 
+        </h2>
+
+        <br>
+
+        <p>
+        The &lt;img&gt; tag should also contain the width and height attributes, which specify the width and height of the image (in pixels): 
+        <br>
+        Example:- 
+        <br>
+        <img src="Image14.jpg" width="500" height="400">
+        </p>
+        
+        <br>
+        <br>
+
+        <h2>
+            The alt Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The required alt attribute for the &lt;img&gt; tag specifies an alternative text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader. 
+            <br>
+            So if we try to display an image that does not exist, then the value of alt attribute will be displayed instead. 
+            <br>
+            Example:- 
+            <br>
+            <img src="Img.jpg" height="400" width="400" alt="Girl with a jacket image">
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The style Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The style attribute is used to add styles to an element, such as color, font, size and more. 
+            <br>
+            Example:- 
+            <br>
+            <p style="color:red;">This is a red paragraph.</p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The lang Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            You should always include the lang attribute inside the &lt;html&gt; tag, to declare the language of the web page. This is meant to assist web browsers and search engines. 
+            <br>
+            The following example specifies English as the language:- 
+            <br>
+            &lt;!DOCTYPE html&gt; 
+            <br>
+            &lt;html lang="en"&gt; 
+            <br>
+            &lt;body&gt; 
+            <br>
+            ......... 
+            <br>
+            &lt;/body&gt; 
+            <br>
+            &lt;/html&gt; 
+
+            <br>
+            <br>
+
+            Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country. 
+            <br>
+            The following example specifies English as the language and the United States as the country:- 
+            <br>
+            &lt;!DOCTYPE html&gt; 
+            <br>
+            &lt;html lang="en-US"&gt; 
+            <br>
+            &lt;body&gt; 
+            <br>
+            ..... 
+            <br>
+            &lt;/body&gt; 
+            <br>
+            &lt;/html&gt; 
+            <br>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The title Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The title attribute defines some extra information about an element. 
+            <br>
+            The value of the title attribute will be displayed as a tooltip when you mouse over the element:- 
+            <br>
+            Example:- 
+            <br>
+            <p title="I'm a tooltip.">This is a paragraph.</p>
+        </p>
+        
+
+        <br>
+        <br>
+
+        <h2>
+            We Suggest: Always Use Lowercase Attributes 
+        </h2>
+
+        <br>
+
+        <p>
+            The HTML standard does not require lowercase attribute names. 
+            <br>
+            The title attribute (and all other attributes) can be written with uppercase and lowercase like <b>title </b>or <b>TITLE</b>. 
+            <br>
+            However, W3C <b>recommends</b> lowercase attributes in HTML, and <b>demands</b> lowercase attributes for stricter document types like XHTML. 
+            <br>
+
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            We Suggest: Always Quote Attribute Values 
+        </h2>
+
+        <br>
+
+        <p>
+            The HTML Standard does not require quotes around attribute values. 
+            <br>
+            However, W3C <b>recommends</b> quotes in HTML, and <b>demands </b>quotes for stricter document types like XHTML. 
+            Example:- 
+            <br>
+            Good:- 
+            <br>
+            &lt;a href="https://www.w3schools.com/html/"&gt;Visit Our HTML Tutorials&lt;/a&gt; 
+            <br>
+            <br>
+            Bad:- 
+            <br>
+            &lt;a href=https://www.w3schools.com/html/&gt;Visit Our HTML Tutorials&lt;/a&gt; 
+
+            <br>
+            <br>
+
+            Sometimes you have to use quotes. The following example will not display the title attribute correctly because it contains space:- 
+            <br>
+            &lt;p title=About W3Schools&gt; 
+            <br>
+
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Single or Double Quotes? 
+        </h2>
+
+        <br>
+
+        <p>
+        Double quotes around attribute values are the most common in HTML, but single quotes can also be used. 
+        <br>
+        In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:- 
+        <br>
+        &lt;p title='John "Shotgun" Nelson'&gt; 
+        <br>
+        <br>
+        Or Vice Versa:- 
+        <br>
+        &lt;p title="John 'Shotgun' Nelson"&gt; 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Chapter Summary 
+        </h2>
+
+        <br>
+
+        <p>
+            <ul>
+                <li>All HTML elements can have <b>attributes</b></li>
+                <li>The href attribute of &lt;a&gt; specifies the URL of the page the link goes to</li>
+                <li>The src attribute of &lt;img&gt; specifies the path to the image to be displayed</li>
+                <li>The width and height attributes of &lt;img&gt; provide size information for images</li>
+                <li>The alt attribute of &lt;img&gt; provides an alternative text for an image</li>
+                <li>The style attribute is used to add styles to an element, such as color, font, size, and more</li>
+                <li>The lang attribute of the &lt;html&gt; tag declares the language of the web page</li>
+                <li>The title attribute defines some extra information about an element</li>
+            </ul>
+        </p>
+    </body>
+</html>
