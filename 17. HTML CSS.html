@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML CSS 
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            HTML Styles - CSS 
+        </h1>
+
+        <br>
+
+        <p>
+            CSS stands for Cascading Style Sheets. 
+            <br>
+            CSS saves a lot of work. It can control the layout of multiple web pages all at once. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            What is CSS? 
+        </h2>
+
+        <br>
+
+        <p>
+            Cascading Style Sheets (CSS) is used to format the layout of a webpage. 
+            <br>
+            With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images and background colors are to be used, different displays for different devices and screen sizes, and much more! 
+            <br>
+            <p style="background-color:yellow;">
+            <b>Tip:- </b> The word <b>cascading</b> means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)! 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Using CSS 
+        </h2>
+
+        <br>
+
+        <p>
+            CSS can be added to HTML documents in 3 ways:- 
+            <br>
+            <ul>
+                <li><b>Inline</b> - by using the style attribute inside the HTML elements. </li>
+                <li><b>Internal</b> - by using a &lt;style&gt; element in the &lt;head&gt; section. </li>
+                <li><b>External</b> - by using a &lt;link&gt; element to link to an external CSS file. </li>
+            </ul>
+
+            <br>
+            <br>
+
+            The most common way to add CSS, is to keep the styles in external CSS files. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Inline CSS 
+        </h2>
+
+        <br>
+
+        <p>
+            An Inline CSS is used to apply a unique style to a single HTML element. 
+            <br>
+            An Inline CSS uses the style attribute of the HTML element. 
+            <br>
+            The following example sets the text color of &lt;h1&gt; element to blue, and that of &lt;p&gt; element to red:- 
+            <br>
+            <h1 style="color:blue;">A Blue Heading. </h1>
+            <p style="color:red;">A red paragraph. </p>
+
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Internal CSS 
+        </h2>
+
+        <br>
+
+        <p>
+            An Internal CSS is used to define the style for a single HTML page. 
+            <br>
+            An Internal CSS is defined in the &lt;head&gt; section of the HTML page, within a &lt;style&gt; element. 
+            <br>
+            The following example sets the text color of ALL the &lt;h1&gt; elements (on that page) to blue, and the text color of ALL the &lt;p&gt; elements to red. In addition, the page will be displayed with a "powderblue" background color:- 
+            <br>
+            <a href="17. HTML CSS-Internal CSS.html" target="_blank">Internal CSS</a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            External CSS 
+        </h2>
+
+        <br>
+
+        <p>
+            An External Style Sheet is used to define the style for many HTML pages. 
+            <br>
+            To use an external style sheet, add a link to it in the &lt;head&gt; section of each HTML page. 
+            <br>
+            Syntax:- 
+            <br>
+            <p style="background-color:yellow;">
+            &lt;link rel="stylesheet" href="destination_address_of_stylesheet"&gt; 
+            </p>
+            <br>
+            Example:- 
+            <br>
+            <a href="17. HTML CSS-External CSS.html" target="_blank">External CSS</a>
+
+            <br>
+            <br>
+
+            The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension. 
+            <br>
+            Here is what the "styles.css" file looks like:- 
+            <br>
+            <a href="styles.css" target="_blank">External Style Sheet</a>
+
+            <br>
+            <br>
+
+            <p style="background-color:yellow;">
+            <b>Tip:- </b>With an external style sheet, you can change the look of an entire website, by changing one file! 
+            </p>
+
+
+        </p>
+
+
+        <br>
+        <br>
+
+        <h2>
+            CSS Colors, Fonts and Sizes 
+        </h2>
+
+        <br>
+
+        <p>
+            The CSS color property defines the text color to be used. 
+            <br>
+            The CSS font-family property defines the font to be used. 
+            <br>
+            The CSS font-size property defines the text size to be used. 
+            <br>
+            Example:- 
+            <br>
+            <h1 style="color:blue;font-family:verdana;font-size:300%;">This is a heading.</h1>
+            <br>
+            <p style="color:red;font-family:courier;font-size:160%;">This is a paragraph.</p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            CSS Border 
+        </h2>
+
+        <br>
+
+        <p>
+            The CSS border property defines a border around a HTML element. 
+            <br>
+            <b>Tip:- </b>You can define border for nearly all HTML elements. 
+            <br>
+            Example:- 
+            <br>
+            <p style="border:2px solid powderblue;">This paragraph has a border.</p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            CSS Padding 
+        </h2>
+
+        <br>
+
+        <p>
+            The CSS padding property defines a padding (a space) between the text and the border. 
+            <br>
+            Example:- 
+            <br>
+            <p style="border:2px solid green;padding:30px;">This is a paragraph with border and padding. </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            CSS Margin 
+        </h2>
+
+        <br>
+
+        <p>
+            The CSS margin property defines a margin (space) outside the border. 
+            <br>
+            Example:- 
+            <br>
+            <p style="border:2px solid blue;margin:50px;">This is a paragraph with border and margin. </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Link to External CSS 
+        </h2>
+
+        <br>
+        <p>
+            External Style Sheets can be referenced with a full URL or with a path relative to the current web page. 
+            <br>
+            The below example uses a full URL to link to a stylesheet:- 
+            <br>
+            <p style="background-color:yellow;">
+            &lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt; 
+            </p>
+            <br>
+            <br>
+            The below example links to a stylesheet located in the html folder on the current website:- 
+            <br>
+            <p style="background-color:yellow;">
+            &lt;link rel="stylesheet" href="/html/styles.css"&gt; 
+            </p>
+            <br>
+            <br>
+            The below example links to a stylesheet located in the same folder as the current page:- 
+            <br>
+            <p style="background-color:yellow;">
+            &lt;link rel="stylesheet" href="styles.css"&gt; 
+            </p>
+        </p>
+
+        <h2>
+            Chapter Summary 
+        </h2>
+
+        <br>
+
+        <p>
+            <ul>
+                <li>Use the HTML style attribute for inline styling. </li>
+                <li>Use the HTML &lt;style&gt; element to define internal CSS </li>
+                <li>Use the HTML &lt;link&gt; element to refer to an external CSS file </li>
+                <li>Use the HTML &lt;head&gt; element to store &lt;style&gt; and &lt;link&gt; elements </li>
+                <li>Use the CSS color property for text colors </li>
+                <li>Use the CSS font-family property for text fonts </li>
+                <li>Use the CSS font-size property for text sizes </li>
+                <li>Use the CSS border property for borders </li>
+                <li>Use the CSS padding property for space inside the border </li>
+                <li>Use the CSS margin property for space outside the border </li>
+            </ul>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Style Tags 
+        </h2>
+
+        <br>
+
+        <table border="3px">
+            <tr>
+                <td><b>Tag</b></td>
+                <td><b>Description</b></td>
+            </tr>
+            <tr>
+                <td>&lt;style&gt;</td>
+                <td>Defines style information for a HTML document</td>
+            </tr>
+            <tr>
+                <td>&lt;link&gt;</td>
+                <td>Defines a link between a document and an external source</td>
+            </tr>
+        </table>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Links 
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            HTML Links 
+        </h1>
+
+        <br>
+
+        <p>
+            Links are found in nearly all web pages. Links allow users to click their way from one page to another. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Links - Hyperlinks 
+        </h2>
+
+        <br>
+
+        <p>
+            HTML links are Hyperlinks. 
+            <br>
+            You can click on a link and jump to another document. 
+            <br>
+            When you move the mouse over a link, the mouse arrow will turn into a little hand. 
+            <br>
+            <br>
+            <p style="background-color:yellow;padding:20px;">
+            <b>Note:- </b>A link does not have to be text. A link can be an image or any other HTML element! 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Links - Syntax 
+        </h2>
+
+        <br>
+
+        <p>
+            The HTML &lt;a&gt; tag defines a hyperlink. It has the following syntax:- 
+            <br>
+            <br>
+            <p style="border:2px solid green;padding:20px;">
+            &lt;a href="url"&gt;Link Text&lt;/a&gt; 
+            </p>
+
+            <br>
+            <br>
+
+            The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination. 
+            <br>
+            The <i>Link Text </i>is the part that will be visible to the reader. 
+            <br>
+            Clicking on the link text, will send the reader to the specified URL address. 
+            <br>
+            <br>
+            The below example will show how to create a link to W3Schools.com:- 
+            <br>
+            <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+
+            <br>
+            <br>
+
+            By default, links will appear as follows in all browsers:- 
+            <br>
+            <ul>
+               <li>An unvisited link is underlined and blue. </li>
+               <li>A visited link is underlined and purple. </li>
+               <li>An active link is underlined and red. </li>
+            </ul>
+
+            <br>
+            <br>
+
+            <p style="background-color:yellow;padding:20px;">
+            <b>Tip:- </b>Links can of course be styled with CSS, to get another look! 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Links - The target Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+        By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link. 
+        <br>
+        The target attribute specifies where to open the linked document. 
+        <br>
+        The target attribute can have one of the following values:- 
+        <br>
+        <ul>
+            <li>_self - Default. Open the link in the same window/tab as it was clicked. </li>
+            <li>_blank - Open the link in a new window or tab. </li>
+            <li>_parent - Open the link in the parent frame. </li>
+            <li>_top - Open the link in the full body of the window. </li>
+        </ul>
+
+        <br>
+        <br>
+
+        The following example will use target="_blank" to open the link in a new browser window or tab:- 
+        <br>
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools.com! </a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Absolute URLs vs. Relative URLs 
+        </h2>
+
+        <br>
+
+        <p>
+            Both examples above are using an absolute URLs (a full web address) in the href attribute. 
+            <br>
+            A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):- 
+            <br>
+            <br>
+            Example:- 
+            <br>
+            <br>
+            <h3>Absolute URLs</h3>
+            <br>
+            <a href="https://www.w3.org/" target="_blank">W3C</a> 
+            <br>
+            <a href="https://www.google.com/" target="_blank">Google</a>
+            <br>
+            <br>
+
+            <h3>Relative URLs</h3>
+            <br>
+            <a href="15. HTML Hex Colors.html" target="_blank">HTML Hex Colors</a>
+            <br>
+            <a href="11. HTML Quotations.html" target="_blank">HTML Quotations</a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Links - Use an Image as a Link 
+        </h2>
+
+        <br>
+
+        <p>
+            To use an image as a link, just put the &lt;img&gt; tag inside the &lt;a&gt; tag:- 
+            <br>
+            Example:- 
+            <br>
+            The image below is a link. Try to click on it. 
+            <br>
+            <br>
+            <a href="https://www.google.com/" target="_blank">
+                <img src="Image15.png" width="300" height="300" alt="Google.com">
+            </a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Link to an Email Address 
+        </h2>
+
+        <br>
+
+        <p>
+            Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):- 
+            <br>
+            Example:- 
+            <br>
+            <a href="mailto:someone@example.com">Send Mail</a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Button as a Link 
+        </h2>
+
+        <br>
+
+        <p>
+            To use a HTML button as a link, you have to add some JavaScript code. 
+            <br>
+            JavaScript allows you to specify what happens at certain events, such as a click of a button:- 
+            <br>
+            Example:- 
+            <br>
+            <button onclick="document.location='https://www.google.com'">Google.com</button>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Link Titles 
+        </h2>
+
+        <br>
+
+        <p>
+            The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element. 
+            <br>
+            <a href="https://www.w3schools.com/" target="_blank" title="Go to W3Schools.com website">Visit W3Schools.com!</a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            More on Absolute URLs and Relative URLs 
+        </h2>
+
+        <br>
+
+        <p>
+            Use a full URL to link to a webpage:- 
+            <br>
+            Example:-
+            <br>
+            <p style="border:2px solid green;">
+            &lt;a href="https://www.w3schools.com/html/default.asp"&gt;HTML Tutorial&lt;/a&gt; 
+            </p>
+            <br>
+            <br>
+            Link to a webpage located in the html folder on the current website:- 
+            <br>
+            <p style="border:2px solid blue;">
+            &lt;a href="/html/default.asp"&gt;HTML Tutorial&lt;/a&gt; 
+            </p>
+            <br>
+            <br>
+            Link to a page located in the same folder as the current webpage:- 
+            <br>
+            <p style="border:2px solid orange;">
+            &lt;a href="default.asp"&gt;HTML Tutorial&lt;/a&gt; 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Chapter Summary 
+        </h2>
+
+        <br>
+
+        <p>
+            <ul>
+                <li>Use the &lt;a&gt; element to define a link. </li>
+                <li>Use the href attribute to define the link address. </li>
+                <li>Use the target attribute to define where to open the linked document. </li>
+                <li>Use the &lt;img&gt; element inside the &lt;a&gt; element to use image as a link. </li>
+                <li>Use the mailto: scheme inside the href attribute to create a link that opens the user's email program. </li>
+            </ul>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Link Tags 
+        </h2>
+
+        <br>
+        <br>
+
+        <table border="2">
+            <tr>
+                <td><b>Tag</b></td>
+                <td><b>Description</b></td>
+            </tr>
+            <tr>
+                <td>&lt;a&gt;</td>
+                <td>Defines a hyperlink</td>
+            </tr>
+        
+        </table>
+
+    </body>
+</html>
