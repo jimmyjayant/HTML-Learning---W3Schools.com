@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Style Attribute 
+        </title>
+
+        <Style>
+            /*This style sets the width of all images to 100%.*/
+            img {
+                width:100%;
+            }
+        </Style>
+    </head>
+
+    <body>
+    <h2>
+        Width, Height Attribute or Style? 
+    </h2>
+
+    <p>
+        The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and sets the width to 100%. 
+        <br>
+        <br>
+        <img src="Image18.gif" alt="HTML5 icon" width="128" height="128">
+
+        <br>
+        <br>
+
+        The second image uses the style attribute to set the width to 128 pixels, this will not be overriden by the style in the head section. 
+        <br>
+        <br>
+        <img src="Image18.gif" alt="HTML5 icon" style="width:128px;height:128px;">
+    </p>
+    </body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Images 
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            HTML Images 
+        </h1>
+
+        <br>
+
+        <p>
+            Images can improve the design and appearance of a web page. 
+        </p>
+            <br>
+            <br>
+            Example:- 
+            <br>
+            <img src="Image16.jpg" alt="Trulli" width="500" height="333">
+
+            <br>
+            <br>
+
+            <img src="Image14.jpg" alt="Girl in a jacket" width="500" height="600">
+
+            <br>
+            <br>
+
+            <img src="Image17.jpg" alt="Flowers in Chania" width="460" height="345">
+
+            <br>
+            <br>
+
+            <h2>
+                HTML Images Syntax 
+            </h2>
+
+            <br>
+
+            <p>
+                The HTML &lt;img&gt; tag is used to embed an image in a web page. 
+                <br>
+                Images are not technically inserted into a web page; images are linked to web pages. The &lt;img&gt; tag creates a holding space for the referenced image. 
+                <br>
+                The &lt;img&gt; tag is empty, it contains attributes only, and does not have an ending tag. 
+                <br>
+                The &lt;img&gt; tag has two required attributes:- 
+                <br>
+                <ul>
+                    <li>src - Specifies the path to the image</li>
+                    <li>alt - Specifies an alternate text for the image</li>
+                </ul>
+
+                <br>
+                <br>
+
+                Syntax:- 
+                <br>
+                <p style="background-color:yellow;border:2px solid green;padding:10px 10px;">
+                &lt;img src="<i>url</i>" alt="<i>alternatetext</i>"&gt; 
+                </p>
+            </p>
+            
+
+            <br>
+            <br>
+
+            <h2>
+                The src Attribute 
+            </h2>
+
+            <br>
+
+            <p>
+                The required src attribute specifies the path (URL) to the image. 
+                <br>
+                <br>
+                <b>Note:- </b>When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. 
+                <br>
+                Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image. 
+                <br>
+                Example:- 
+                <br>
+                <img src="xys.jpg" alt="Broken Link Icon and Alt Text Shown">
+            </p>
+
+            <br>
+            <br>
+
+            <h2>
+                The alt Attribute 
+            </h2>
+
+            <br>
+
+            <p>
+                The required alt attribute provides an alternate text for the image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader). 
+                <br>
+                The value of the alt attribute should describe the image. 
+                <br>
+                <img src="Image17.jpg" alt="Flowers in Chania" width="460" height="345">
+
+                <br>
+                <br>
+
+                If a browser cannot find an image, it will display value of the alt attribute:- 
+                <br>
+                <br>
+                <img src="wrongname.gif" alt="Flowers in Chania">
+
+                <br>
+                <br>
+
+                <p style="background-color:yellow;border:2px solid green;padding:15px 25px;">
+                <b>Tip:- </b>A screen reader is a software program that reads the HTML code, and allows the user to "listen" to the content. Screen readers are useful for the people who are visually impaired or learning disabled. 
+                </p>
+            </p>
+
+            <br>
+            <br>
+
+            <h2>
+                Image Size - Width and Height 
+            </h2>
+
+            <br>
+
+            <p>
+                You can use the style attribute to specify the width and height of an image. 
+                <br>
+                Example:- 
+                <br>
+                <img src="Image14.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+                <br>
+                <br>
+
+                Alternatively, you can use the width and height attributes:- 
+                <br>
+                <img src="Image14.jpg" alt="Girl in a jacket" width="500" height="600">
+
+                <br>
+                <br>
+
+                The width and height attributes always define the width and height of the image in pixels. 
+
+                <br>
+                <br>
+
+                <p style="background-color:lightyellow;border:2px solid green;padding:15px 25px;">
+                <b>Note:- </b>Always specify the width and height of an image. If the width and height are not specified, the web page might flicker while the image loads. 
+                </p>
+            </p>
+
+            <br>
+            <br>
+
+            <h2>
+                Width and Height, or Style? 
+            </h2>
+
+            <br>
+
+            <p>
+                The width, height and style attributes are all valid in HTML. 
+                <br>
+                However, we suggest using the style attribute. It prevents style sheets from changing the size of images:- 
+                <br>
+                <a href="19. HTML Images-Style Attribute.html" target="_blank">Style Attribute</a>
+            </p>
+            
+
+            <br>
+            <br>
+
+            <h2>
+                Images in Another Folder 
+            </h2>
+
+            <br>
+
+            <p>
+                If you have your images in a sub-folder, you must include the folder name in the src attribute:- 
+                <br>
+                Example:- 
+                <br>
+                <p style="background-color:yellow;border:2px solid blue;padding:15px 25px;">
+                &lt;img src="/images/html5.gif" alt="HTML5 icon" style="width:128px;height:128px;"&gt; 
+                </p>
+            </p>
+
+            <br>
+            <br>
+
+            <h2>
+                Images on Another Server/Website 
+            </h2>
+
+            <br>
+
+            <p>
+                Some websites point to an image on another server. 
+                <br>
+                To point to an image on another server, you must specify an absolute (full) URL in the src attribute:- 
+                <br>
+                Example:- 
+                <br>
+                <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:104px;height:142px;">
+
+                <br>
+                <br>
+
+                <b>Notes on external images:- </b>External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; they can suddenly be removed or changed. 
+            </p>
+
+            <br>
+            <br>
+
+            <h2>
+                Animated Images 
+            </h2>
+
+            <br>
+
+            <p>
+                HTML allows animated GIFs:- 
+                <br>
+                <img src="Image19.gif" alt="Computer man" style="width:48px;height:48px;">
+            </p>
+
+            <br>
+            <br>
+
+            <h2>
+                Image as a Link 
+            </h2>
+
+            <br>
+
+            <p>
+                To use an image as a link, put the &lt;img&gt; tag inside the &lt;a&gt; tag:- 
+                <br>
+                Example:- 
+                <br>
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                <img src="Image18.gif" alt="HTML Tutorial" style="width:128px;height:128px;">    
+                </a>
+
+            </p>
+
+            <br>
+            <br>
+
+            <h2>
+                Image Floating 
+            </h2>
+
+            <br>
+
+            <p>
+             Use the CSS float property to let the image float to the right or to the left of a text:- 
+             <br>
+             Example:- 
+             <br>
+             <strong>Float the image to the right:- </strong>
+             <br>
+             <img src="Image20.gif" alt="Smiley Face" style="float:right;width:42px;height:42px;">
+             A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. 
+
+             <br>
+             <br>
+
+             <strong>Float the image to the left:- </strong>
+             <br>
+             <img src="Image20.gif" alt="Smiley Face" style="float:left;width:42px;height:42px;">
+             A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. 
+            </p>
+
+            <br>
+            <br>
+
+            <h2>
+                Common Image Formats 
+            </h2>
+
+            <br>
+            
+            <p>
+                Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox, Safari, Opera):- 
+            </p>
+
+            <br>
+
+            <table border="3">
+            <tr>
+                <td>Abbreviation</td>
+                <td>File Format</td>
+                <td>File Extension</td>
+            </tr>
+            <tr>
+                <td>APNG</td>
+                <td>Animated Portable Network Graphics</td>
+                <td>.apng</td>
+            </tr>
+            <tr>
+                <td>GIF</td>
+                <td>Graphics Interchange Format</td>
+                <td>.gif</td>
+            </tr>
+            <tr>
+                <td>ICO</td>
+                <td>Microsoft Icon</td>
+                <td>.ico, .cur</td>
+            </tr>
+            <tr>
+                <td>JPEG</td>
+                <td>Joint Photographic Expert Group Image</td>
+                <td>.jpg, .jpeg, .jfif, .pjpeg, .pjp</td>
+            </tr>
+            <tr>
+                <td>PNG</td>
+                <td>Portable Network Graphics</td>
+                <td>.png</td>
+            </tr>
+            <tr>
+                <td>SVG</td>
+                <td>Scalable Vector Graphics</td>
+                <td>.svg</td>
+            </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <h2>
+                Chapter Summary 
+            </h2>
+
+            <br>
+
+            <p>
+                <ul>
+                    <li>Use the HTML &lt;img&gt; element to define an image. </li>
+                    <li>Use the HTML src attribute to define the URL of the image. </li>
+                    <li>Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed. </li>
+                    <li>Use the HTML width and height attributes or the CSS width and height properties to define the size of the image. </li>
+                    <li>Use the CSS float property to let the image float to the left or to the right. </li>
+                </ul>
+            </p>
+
+            <br>
+            <br>
+
+            <p style="background-color:yellow;border:2px solid green;padding:15px 25px;">
+            <b>Note:- </b>Loading large images take time, and can slow down your web page. Use images carefully. 
+            </p>
+
+
+    </body>
+</html>
