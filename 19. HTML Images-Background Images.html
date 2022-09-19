@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Background Images 
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            HTML Background Images 
+        </h1>
+
+        <br>
+
+        <p>
+            A background image can be specified for any HTML element. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Background Image on a HTML element 
+        </h2>
+
+        <br>
+
+        <p>
+            To add a background image on a HTML element, use the HTML style attribute and the CSS background-image property:- 
+            <br>
+            Example:- 
+            <br>
+            <p><u>Background Image for a &lt;p&gt; element:-</u> </p>
+            <br>
+            <br>
+            <p style="background-image:url('Image14.jpg');">
+            You can specify background images<br>
+            for any visible HTML element. <br>
+            In this example, the background image <br>
+            is specified for a p element. <br>
+            By default, the background-image <br>
+            will repeat itself in the direction(s) <br>
+            where it is smaller than the element <br>
+            where it is specified. <br>
+            Try resizing the browser <br>
+            window to see how the <br>
+            background image behaves. 
+            </p>
+
+            <br>
+            <br>
+
+            You can also specify the background image in the &lt;style&gt; element, in the &lt;head&gt; section:- 
+            <br>
+            Example:- 
+            <br>
+            The above background image for p element can also be specified in the style element in head section. 
+            <br>
+            <p style="background-color:yellow;border:2px solid green;padding:15px 25px;">
+            &lt;head&gt; 
+            <br>
+            &lt;style&gt; 
+            <br>
+            p {
+                <br>
+                background-image:url('Image14.jpg');
+                <br>
+            }
+            <br>
+            &lt;/style&gt; 
+            <br>
+            &lt;/head&gt; 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Background Image on a Page 
+        </h2>
+
+        <br>
+
+        <p>
+            If you want the entire page to have a background image, you must specify the background image on the &lt;body&gt; element:- 
+            <br>
+            Example:- 
+            <br>
+            <a href="19. HTML Images-Background Images-Background Image On a Page.html" target="_blank">BackgroundImageOnAPage</a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Background Repeat 
+        </h2>
+
+        <br>
+
+        <p>
+            If the background image is smaller than the element, then it will repeat itself either horizontally or vertically until it reaches the end of the element. 
+            <br>
+            Example:- 
+            <br>
+            <a href="19. HTML Images-Background Images-Background Repeat.html" target="_blank">Background Repeat</a>
+
+            <br>
+            <br>
+
+            To avoid the background image from repeating itself, set the background-repeat property to no-repeat:- 
+            <br>
+            Example:- 
+            <br>
+            <a href="19. HTML Images-Background Images-Background No Repeat.html" target="_blank">Background No Repeat</a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Background Cover 
+        </h2>
+
+        <br>
+
+        <p>
+            If you want the background image to cover the entire element, you can set the background-size property to cover. 
+            <br>
+            Also, to make sure the entire element is always covered, set the background-attachment property to fixed. 
+            <br>
+            This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions):- 
+            <br>
+            Example:- 
+            <br>
+            <a href="19. HTML Images-Background Images-Background Cover.html" target="_blank">Background Cover</a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Background Stretch 
+        </h2>
+
+        <br>
+
+        <p>
+            If you want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100%. 
+            <br>
+            Try resizing the browser window and you will see that the image will stretch but will always cover the entire element. 
+            <br>
+            Example:- 
+            <br>
+            <a href="19. HTML Images-Background Images-Background Stretch.html" target="_blank">Background Stretch</a>
+        </p>
+    </body>
+</html>
