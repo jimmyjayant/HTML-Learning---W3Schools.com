@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            The Picture Element 
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            HTML &lt;picture&gt; Element 
+        </h1>
+
+        <br>
+
+        <p>
+            The HTML &lt;picture&gt; element allows you to display different pictures for different devices or screen sizes. 
+            <br>
+            <br>
+            <img src="Image30.jpg" width="837" height="327" alt="HTML Picture Element">
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The HTML &lt;picture&gt; Element 
+        </h2>
+
+        <br>
+
+        <p>
+            The HTML &lt;picture&gt; element gives web developers more flexibility in specifying image resources. 
+            <br>
+            The &lt;picture&gt; element contains one or more &lt;source&gt; elements, each referring to different images throught the srcset attribute. 
+            <br>
+            This way the browser can choose the image that best fits the current view and/or device. 
+
+            <br>
+            <br>
+
+            Each &lt;source&gt; element has a media attribute that defines when the image is the most suitable. 
+            <br>
+            Example:- 
+            <br>
+            Show different images for different screen sizes:- 
+            <br>
+            <picture>
+                <source media="(min-width:650px)" srcset="Image31.jpg">
+                <source media="(min-width:465px)" srcset="Image32.jpg">
+                <img src="Image14.jpg" style="width:auto;">
+            </picture>
+
+            <br>
+            <br>
+
+            <p style="background-color:yellow;border:2px solid green;padding:15px 25px;">
+            Resize the browser to see different versions of the picture loading at different viewport sizes. 
+            <br>
+            The browser looks for the first source element where the media query matches the user's current viewport width, 
+            <br>
+            and fetches the image specified in the srcset attribute. 
+            <br>
+            The &lt;img&gt; element is required as the last child tag of the picture declaration block. 
+            <br>
+            The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched. 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <p style="background-color:yellow;border:2px solid green;padding:15px 25px;">
+        <b>Note:- </b>Always specify an &lt;img&gt; element as the last child element of the &lt;picture&gt; element. The &lt;img&gt; element is used by browsers that do not support the &lt;picture&gt; element, or if none of the &lt;source&gt; tags match. 
+        </p>
+        
+
+        <br>
+        <br>
+
+        <h2>
+            When to use the &lt;picture&gt; element 
+        </h2>
+
+        <br>
+
+        <p>
+            There are two main purposes for the &lt;picture&gt; element:- 
+            <br>
+            <ol>
+                <li><b><u>Bandwidth</u></b></li>
+                <p>If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first &lt;source&gt; element with matching attribute values, and ignore any of the following elements. </p>
+
+                <br>
+                <br>
+
+                <li><b><u>Format Support</u></b></li>
+                <p>Some browsers or devices may not support all image formats. By using the &lt;picture&gt; element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements. </p>
+            </ol>
+
+            <br>
+            <br>
+
+            Example:- 
+            <br>
+            The browser will use the first image format it recognizes:- 
+            <br>
+            <a href="19. HTML Images-The Picture Element-Format Support.html" target="_blank">Image Format Support</a>
+        </p>
+
+        <br>
+        <br>
+
+        <p style="background-color:yellow;border:2px solid green;padding:15px 25px;">
+        <b>Note:- </b>The browser will use the first &lt;source&gt; element with matching attribute values, and ignore any following &lt;source&gt; elements. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Image Tags 
+        </h2>
+
+        <br>
+
+        <table style="border:2px solid black;">
+        <tr style="text-align:left;">
+            <th>Tag</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>&lt;img&gt;</td>
+            <td>Defines an image</td>
+        </tr>
+        <tr>
+            <td>&lt;map&gt;</td>
+            <td>Defines an image map</td>
+        </tr>
+        <tr>
+            <td>&lt;area&gt;</td>
+            <td>Defines a clickable area inside an image map</td>
+        </tr>
+        <tr>
+            <td>&lt;picture&gt;</td>
+            <td>Defines a container for multiple image resources</td>
+        </tr>
+        </table>
+
+    </body>
+</html>

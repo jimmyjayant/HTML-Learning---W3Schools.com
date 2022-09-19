@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Tables 
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            HTML Tables 
+        </h1>
+
+        <br>
+
+        <p>
+            HTML Tables allow web developers to arrange data into rows and columns. 
+            <br>
+            Example:- 
+            <br>
+            <a href="21. HTML Tables-Table 1.html" target="_blank">Table 1</a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Define a HTML Table 
+        </h2>
+
+        <br>
+
+        <p>
+            A table in HTML consists of table cells inside rows and columns. 
+            <br>
+            Example:- 
+            <br>
+            A Simple HTML Table:- 
+            <br>
+            <br>
+            <a href="21. HTML Tables-Table 2.html" target="_blank">Table 2</a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Table Cells 
+        </h2>
+
+        <br>
+
+        <p>
+            Each table cell is defined by a &lt;td&gt; and a &lt;/td&gt; tag. 
+            <br>
+            <p style="background-color:yellow;border:2px solid green;padding:15px 25px;">
+            td stands for table data.
+            </p>
+            <br>
+            Everything between &lt;td&gt; and the &lt;/td&gt; are the content of the table cell. 
+            <br>
+            Example:- 
+            <br>
+            <h2>TD elements define table cells</h2>
+
+            <br>
+            <br>
+
+            <table style="width:100%;border:1px solid black;">
+            <tr>
+                <td style="border:1px solid black;">Emil</td>
+                <td style="border:1px solid black;">Tobias</td>
+                <td style="border:1px solid black;">Linus</td>
+            </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <p style="background-color:yellow;border:2px solid green;padding:8px;">
+            <b>Note:- </b>A table cell can contain all sorts of HTML elements:- text, images, lists, links, other tables, etc. 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Table Rows 
+        </h2>
+
+        <br>
+
+        <p>
+            Each table row starts with a &lt;tr&gt; and ends with a &lt;/tr&gt; tag. 
+
+            <br>
+
+            <p style="background-color:yellow;border:2px solid blue;padding:8px;">
+            tr stands for table row. 
+            </p>
+
+            <br>
+            <br>
+
+            Example:- 
+            <br>
+            <h2>TR elements define table rows</h2>
+
+            <br>
+            <br>
+
+            <table style="width:100%;border:1px solid black;">
+            <tr>
+            <td style="border:1px solid black;">Emil</td>
+            <td style="border:1px solid black;">Tobias</td>
+            <td style="border:1px solid black;">Linus</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black;">16</td>
+                <td style="border:1px solid black;">14</td>
+                <td style="border:1px solid black;">10</td>
+            </tr>
+            </table>
+
+            <br>
+            <br>
+
+            You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row. 
+
+            <br>
+            <br>
+
+            <p style="background-color:yellow;border:2px solid green;padding:8px;">
+            <b>Note:- </b>There are times when a row can have more or less cells than the other. 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Table Headers 
+        </h2>
+
+        <br>
+
+        <p>
+            Sometimes you want your cells to be table header cells. In those cases use the &lt;th&gt; tag instead of the &lt;td&gt; tag:- 
+            <br>
+            <p style="background-color:yellow;border:2px solid green;padding:8px;">
+            th stands for table header. 
+            </p>
+
+            <br>
+            <br>
+
+            Example:- 
+            <br>
+            Let the first row be table header cells:- 
+            <br>
+            <h2>TH elements define Table Headers</h2>
+            <table style="width:100%;border:1px solid black;">
+            <tr>
+            <th style="border:1px solid black;">Person 1</th>
+            <th style="border:1px solid black;">Person 2</th>
+            <th style="border:1px solid black;">Person 3</th>
+            </tr>
+            <tr>
+                <td style="border:1px solid black;">Emil</td>
+                <td style="border:1px solid black;">Tobias</td>
+                <td style="border:1px solid black;">Linus</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black;">16</td>
+                <td style="border:1px solid black;">14</td>
+                <td style="border:1px solid black;">10</td>
+            </tr>
+            </table>
+
+            <br>
+            <br>
+
+            By default, the text in &lt;th&gt; are bold and centered, but you can change that with CSS. 
+        </p>
+        
+        <br>
+        <br>
+
+        <h2>
+            HTML Table Tags 
+        </h2>
+
+        <br>
+
+        <table style="width:100%;border:1px solid black;">
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>Defines a table</td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>Defines a header cell in a table</td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Defines a row in a table</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Defines a cell in a table</td>
+            </tr>
+            <tr>
+                <td>&lt;caption&gt;</td>
+                <td>Defines a table caption</td>
+            </tr>
+            <tr>
+                <td>&lt;colgroup&gt;</td>
+                <td>Specifies a group of one or more columns in a table for formatting</td>
+            </tr>
+            <tr>
+                <td>&lt;col&gt;</td>
+                <td>Specifies column properties for each column within a &lt;colgroup&gt; element</td>
+            </tr>
+            <tr>
+                <td>&lt;thead&gt;</td>
+                <td>Groups the header content in a table</td>
+            </tr>
+            <tr>
+                <td>&lt;tbody&gt;</td>
+                <td>Groups the body content in a table</td>
+            </tr>
+            <tr>
+                <td>&lt;tfoot&gt;</td>
+                <td>Groups the footer content in a table</td>
+            </tr>
+        </table>
+    </body>
+</html>
