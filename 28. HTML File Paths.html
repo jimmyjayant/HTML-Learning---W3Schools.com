@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML File Paths 
+        </title>
+        <style>
+            th {
+                text-align:left;
+            }
+            table {
+                border:1px solid black;
+            }
+            tr:nth-child(even) {
+                background-color:grey;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            HTML File Paths 
+        </h1>
+
+        <br>
+
+        <p>
+            A file path describes the location of a file in a website's folder structure. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            File Path Examples 
+        </h2>
+
+        <br>
+
+        <p>
+            <table style="width:100%;">
+                <tr>
+                    <th>Path</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;img src="picture.jpg"&gt;</td>
+                    <td>The "picture.jpg" file is located in the same folder as the current page</td>
+                </tr>
+                <tr>
+                    <td>&lt;img src="images/picture.jpg"&gt;</td>
+                    <td>The "picture.jpg" file is located in the images folder in the current folder</td>
+                </tr>
+                <tr>
+                    <td>&lt;img src="/images/picture.jpg"&gt;</td>
+                    <td>The "picture.jpg" file is located in the images folder at the root of the current web</td>
+                </tr>
+                <tr>
+                    <td>&lt;img src="../picture.jpg"&gt;</td>
+                    <td>The "picture.jpg" file is located in the folder one level up from the current folder</td>
+                </tr>
+            </table>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML File Paths 
+        </h2>
+
+        <br>
+
+        <p>
+            A file path describes the location of a file in a website's folder structure. 
+            <br>
+            File paths are used when linking to external files, like:- 
+            <br>
+            <ul>
+                <li>Webpages</li>
+                <li>Images</li>
+                <li>Stylesheets</li>
+                <li>JavaScripts</li>
+            </ul>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Absolute File Paths 
+        </h2>
+
+        <br>
+
+        <p>
+            An absolute file path is the full URL to the file:- 
+            <br>
+            Example:- 
+            <br>
+            <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style="width:300px;">
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Relative File Paths 
+        </h2>
+
+        <br>
+
+        <p>
+            A relative file path points to a file relative to the current web page. 
+            <br>
+            In the following example, the file path points to a file in the images folder located at the root of the current web. 
+            <br>
+            Example:- 
+            <br>
+            &lt;img src="/images/picture.jpg" alt="Mountain" style="width:300px;"&gt; 
+            <br>
+            In the following example, the file path points to a file in the images folder located in the current folder. 
+            <br>
+            Example:- 
+            <br>
+            &lt;img src="images/picture.jpg" alt="Mountain" style="width:300px;"&gt; 
+            <br>
+            In the following example, the file path points to a file in the images folder located in the folder one level up from the current folder. 
+            <br>
+            Example:- 
+            <br>
+            &lt;img src="../images/picture.jpg" alt="Mountain" style="width:300px;"&gt; 
+
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Best Practice 
+        </h2>
+
+        <br>
+
+        <p>
+            It is best practice to use relative file paths (if possible). 
+            <br>
+            When using relative file paths, your web pages will not be bound to your current base URL. All links will work on your own computer (localhost) as well as on your current public domain and your future public domains. 
+        </p>
+
+    </body>
+
+</html>

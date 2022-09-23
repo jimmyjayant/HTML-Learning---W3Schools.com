@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            The HTML id Attribute 
+        </title>
+        <style>
+            #myHeader {
+                background-color:lightblue;
+                color:black;
+                padding:40px;
+                text-align:center;
+            }
+            .city {
+                background-color:tomato;
+                color:white;
+                padding:10px;
+            }
+            #myHeader1 {
+                background-color:aqua;
+                color:green;
+                padding:40px;
+                text-align:center;
+            }
+            #myHeader2 {
+                background-color:orange;
+                color:white;
+                padding:40px;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            HTML id Attribute 
+        </h1>
+
+        <br>
+
+        <p>
+            The HTML id attribute is used to specify a unique id for an HTML element. 
+            <br>
+            You cannot have more than one element with the same id in a HTML document. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Using the id Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The id attribute specifies a unique id for a HTML element. The value of the id attribute must be unique within the HTML document. 
+            <br>
+            The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id. 
+            <br>
+            The syntax for id is:- write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}. 
+            <br>
+            In the following example, we have an &lt;h1&gt; element that points to the id name "myHeader". This &lt;h1&gt; element will be styled according to the #myHeader style definition in the head section. 
+            <br>
+            Example:- 
+            <br>
+            <h1 id="myHeader">My Header</h1>
+        </p>
+
+        <br>
+        <br>
+
+        <p style="background-color:yellow;border:1px solid black;padding:8px;">
+        <b>Note:- </b>The id name is case sensitive! 
+        <br>
+        <b>Note:- </b>The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.). 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Difference Between Class and ID 
+        </h2>
+
+        <br>
+
+        <p>
+        A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within that page. 
+        <br>
+        Example:- 
+        <br>
+        <!--An element with a unique id-->
+        <h1 id="myHeader1">My Header</h1>
+        <br>
+        <br>
+        <h1>States of India:- </h1>
+        <!--Multiple elements with same class name-->
+        <h1 class="city">Haryana</h1>
+        <h1 class="city">Uttar Pradesh</h1>
+        <h1 class="city">Punjab</h1>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Bookmarks with ID and Links 
+        </h2>
+
+        <br>
+
+        <p>
+            HTML Bookmarks are used to allow readers to jump to specific parts of a webpage. 
+            <br>
+            Bookmarks can be useful if your page is very long. 
+            <br>
+            To use a bookmark, you must first create it, and then add a link to it. 
+            <br>
+            Then, when the link is clicked, the page will scroll to the location with the bookmark. 
+            <br>
+            
+            
+            First, create a bookmark with the id attribute:- 
+            <br>
+            &lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt; 
+            <br>
+            Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:- 
+            <br>
+            Example:- 
+            <br>
+            <a href="18. HTML Links-Bookmarks.html" target="_blank">Bookmarks</a>
+            <br>
+            <br>
+            Or, add a link to the bookmark from another page:- 
+            <br>
+            <a href="18. HTML Links-Bookmarks.html#C40" target="_blank">Link to Bookmark on another Page</a>
+
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Using the id Attribute in JavaScript 
+        </h2>
+
+        <br>
+
+        <p>
+        The id attribute can also be used by JavaScript to perform some tasks for that specific element. 
+        <br>
+        JavaScript can access an element with a specific id with the <span style="color:red;">getElementById()</span> method:- 
+        <br>
+        Example:- 
+        <br>
+        <h1 id="myHeader2">Hello World!</h1>
+        <button onclick="displayResult()">Change Text</button>
+
+        </p>
+        
+        <br>
+        <br>
+
+        <h2>
+            Chapter Summary 
+        </h2>
+
+        <ul>
+            <li>The id attribute is used to specify a unique id for an HTML element</li>
+            <li>The value of the id attribute must be unique within the HTML document</li>
+            <li>The id attribute is used by CSS and JavaScript to style/select a specific element</li>
+            <li>The value of the id attribute is case sensitive</li>
+            <li>The id attribute is also used to create HTML bookmarks</li>
+            <li>JavaScript can access an element with a specific id with the getElementById() method</li>
+        </ul>
+
+        <script>
+            function displayResult() 
+            {
+               document.getElementById('myHeader2').innerHTML = "Have a nice day!";
+            }
+        </script>
+    </body>
+</html>
