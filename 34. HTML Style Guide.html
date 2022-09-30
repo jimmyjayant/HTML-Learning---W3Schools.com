@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Style Guide 
+        </title>
+    </head>
+    <body>
+        <h1>
+            HTML Style Guide 
+        </h1>
+
+        <br>
+
+        <p>
+            A consistent, clean, tidy HTML code makes it easier for others to read and understand your code. 
+            <br>
+            Here are some guidelines and tips for creating good HTML code. 
+        </p>
+
+        <br>
+        <br>
+        
+
+        <h2>
+            Always Declare Document Type 
+        </h2>
+
+        <br>
+
+        <p>
+            Always declare the document type as the first line in your document. 
+            <br>
+            The correct document type for HTML is:- 
+            <br>
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;!DOCTYPE html&gt;
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Use Lowercase Element Names 
+        </h2>
+
+        <br>
+
+        <p>
+            HTML allows mixing uppercase and lowercase letters in element names. 
+            <br>
+            However, we recommend using lowercase element names, because:- 
+            <br>
+            <ul>
+                <li>Mixing uppercase and lowercase names looks bad</li>
+                <li>Developers normally use lowercase names</li>
+                <li>Lowercase looks cleaner</li>
+                <li>Lowercase is easier to write</li>
+            </ul>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Good:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;body&gt; 
+            <br>
+            &lt;p&gt;This is a paragraph. &lt;/p&gt; 
+            <br>
+            &lt;/body&gt; 
+            </p>
+            
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Bad:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;BODY&gt; 
+            <br>
+            &lt;P&gt;This is a paragraph. &lt;/P&gt; 
+            <br>
+            &lt;/BODY&gt; 
+            </p>
+
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Close All HTML Elements 
+        </h2>
+
+        <br>
+
+        <p>
+            In HTML, you do not have to close all elements (for example the &lt;p&gt; element). 
+            <br>
+            However, we strongly recommend closing all HTML elements, like this:- 
+            <br>
+            <p style="font-size:large;">Good:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;section&gt; 
+            <br>
+            &lt;p&gt;This is a paragraph. &lt;/p&gt; 
+            <br>
+            &lt;p&gt;This is a paragraph. &lt;/p&gt; 
+            <br>
+            &lt;/section&gt; 
+            </p>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Bad:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;section&gt; 
+            <br>
+            &lt;p&gt;This is a paragraph.
+            <br>
+            &lt;p&gt;This is a paragraph.
+            <br>
+            &lt;/section&gt; 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Use Lowercase Attribute Names 
+        </h2>
+
+        <br>
+
+        <p>
+            HTML allows mixing uppercase and lowercase letters in attribute names. 
+            <br>
+            However, we recommend using lowercase attribute names, because:- 
+            <br>
+            <ul>
+                <li>Mixing uppercase and lowercase names looks bad</li>
+                <li>Developers normally use lowercase names</li>
+                <li>Lowercase looks cleaner</li>
+                <li>Lowercase is easier to write</li>
+            </ul>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Good:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;a href="https://www.w3schools.com/html/"&gt;Visit our HTML Tutorial&lt;/a&gt; 
+            </p>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Bad:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;a HREF="https://www.w3schools.com/html/"&gt;Visit our HTML Tutorial&lt;/a&gt; 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Always Quote Attribute Values 
+        </h2>
+
+        <br>
+
+        <p>
+            HTML allows attribute values without quotes. 
+            <br>
+            However, we recommend quoting attribute values, because:- 
+            <br>
+            <ul>
+                <li>Developers normally quote attribute values</li>
+                <li>Quoted values are easier to read</li>
+                <li>You MUST use quotes if the value contains spaces</li>
+            </ul>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Good:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;table class="striped"&gt;  
+            </p>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Bad:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;table class=striped&gt;  
+            </p>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Very bad:- 
+            <br>
+            This will not work, because the value contains spaces:- 
+            </p>
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;table class=table striped&gt;  
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Always Specify alt, width, and height for Images 
+        </h2>
+
+        <br>
+
+        <p>
+            Always specify the alt attribute for images. This attribute is important if the image for some reason cannot be displayed. 
+            <br>
+            Also, always define the width and height for images. This reduces flickering, because the browser can reserve space for the image before loading. 
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Good:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;img src="html5.gif" alt="HTML5" style="width:128px;height:128px;"&gt;  
+            </p>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Bad:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;img src="html5.gif"&gt; 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Spaces and Equal Signs 
+        </h2>
+
+        <br>
+
+        <p>
+            HTML allows spaces around equal signs. But space-less is easier to read and groups entities better together. 
+            <br>
+            <br>
+
+            <p style="font-size:large;">Good:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;link rel="stylesheet" href="styles.css"&gt;  
+            </p>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Bad:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;link rel = "stylesheet" href = "styles.css"&gt;  
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Avoid Long Code Lines 
+        </h2>
+
+        <br>
+
+        <p>
+            When using a HTML editor, it is NOT convenient to scroll right and left to read the HTML code. 
+            <br>
+            Try to avoid too long code lines. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Blank Lines and Indentation 
+        </h2>
+
+        <br>
+
+        <p>
+            Do not add blank lines, spaces, or indentations without a reason. 
+            <br>
+            For readability, add blank lines to separate large or logical code blocks. 
+            <br>
+            For readability, add two spaces of indentation. Do not use the tab key. 
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Good:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;body&gt;
+            <br>
+            <br>
+            &lt;h1&gt; Famous Cities &lt;/h1&gt; 
+            <br>
+            <br>
+            &lt;h2&gt;Tokyo&lt;/h2&gt; 
+            <br>
+            &lt;p&gt;Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world. &lt;/p&gt; 
+            <br>
+            <br>
+            &lt;h2&gt;London&lt;/h2&gt; 
+            <br>
+            &lt;p&gt; London is the capital city of England. It is the most populous city in the United Kingdom. &lt;/p&gt; 
+            <br>
+            <br>
+            &lt;h2&gt;Paris&lt;/h2&gt; 
+            <br>
+            &lt;p&gt;Paris is the capital of France. The Paris area is one of the largest population centers in Europe. &lt;/p&gt; 
+            <br>
+            <br>
+            &lt;/body&gt; 
+            </p>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Bad:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;body&gt;
+            <br>
+            &lt;h1&gt; Famous Cities &lt;/h1&gt; 
+            <br>
+            &lt;h2&gt;Tokyo&lt;/h2&gt; 
+            <br>
+            &lt;p&gt;Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world. &lt;/p&gt; 
+            <br>
+            &lt;h2&gt;London&lt;/h2&gt; 
+            <br>
+            &lt;p&gt; London is the capital city of England. It is the most populous city in the United Kingdom. &lt;/p&gt; 
+            <br>
+            &lt;h2&gt;Paris&lt;/h2&gt; 
+            <br>
+            &lt;p&gt;Paris is the capital of France. The Paris area is one of the largest population centers in Europe. &lt;/p&gt; 
+            <br>
+            &lt;/body&gt; 
+            </p>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Good Table Example:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;table&gt; 
+            <br>
+            &lt;tr&gt; 
+            <br>
+            &lt;th&gt;Name&lt;/th&gt; 
+            <br>
+            &lt;th&gt;Description&lt;/th&gt; 
+            <br>
+            &lt;/tr&gt; 
+            <br>
+            &lt;tr&gt; 
+            <br>
+            &lt;td&gt;A&lt;/td&gt; 
+            <br>
+            &lt;td&gt;Description of A&lt;/td&gt; 
+            <br>
+            &lt;/tr&gt; 
+            <br>
+            &lt;tr&gt; 
+            <br>
+            &lt;td&gt;B&lt;/td&gt; 
+            <br>
+            &lt;td&gt;Description of B&lt;/td&gt; 
+            <br>
+            &lt;/tr&gt; 
+            <br>
+            &lt;/table&gt; 
+            </p>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Good List Example:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;ul&gt; 
+            <br>
+            &lt;li&gt;London&lt;/li&gt; 
+            <br>
+            &lt;li&gt;Paris&lt;/li&gt; 
+            <br>
+            &lt;li&gt;Tokyo&lt;/li&gt; 
+            <br>
+            &lt;/ul&gt;  
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Never Skip the &lt;title&gt; Element 
+        </h2>
+
+        <br>
+
+        <p>
+            The &lt;title&gt; element is required in HTML. 
+            <br>
+            The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results. 
+            <br>
+            The &lt;title&gt; element:- 
+            <br>
+            <ul>
+                <li>defines a title in the browser toolbar</li>
+                <li>provides a title for the page when it is added to favorites</li>
+                <li>displays a title for the page in search-engine results</li>
+            </ul>
+
+            <br>
+            <br>
+
+            So, try to make the title as accurate and meaningful as possible:- 
+            <br>
+            <br>
+            <p style="background-color:yellow;padding:8px;border:1px solid black;">
+            &lt;title&gt;HTML Style Guide and Coding Conventions&lt;/title&gt; 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Omitting &lt;html&gt; and &lt;body&gt;? 
+        </h2>
+
+        <br>
+
+        <p>
+            An HTML page will validate without the &lt;html&gt; and &lt;body&gt; tags:- 
+            <br>
+            Example:- 
+            <br>
+            <a href="34. HTML Style Guide-HTML Page.html" target="_blank">A Page without &lt;html&gt; and &lt;body&gt; Tag</a>
+
+            <br>
+            <br>
+
+            However, we strongly recommend to always add the &lt;html&gt; and &lt;body&gt; tags! 
+            <br>
+            Omitting &lt;body&gt; can produce errors in older browsers. 
+            <br>
+            Omitting &lt;html&gt; and &lt;body&gt; can also crash DOM and XML software. 
+        </p>
+
+        <br>
+        <br>
+        
+        <h2>
+            Omitting &lt;head&gt;? 
+        </h2>
+
+        <br>
+
+        <p>
+            The HTML &lt;head&gt; tag can also be omitted. 
+            <br>
+            Browsers will add all elements before &lt;body&gt;, to a default &lt;head&gt; element. 
+            <br>
+            Example:- 
+            <br>
+            <a href="34. HTML Style Guide-Omit Head Tag.html" target="_blank">Omit Head Tag</a>
+            <br>
+            <br>
+            However, we recommend using the &lt;head&gt; tag. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Close Empty HTML Elements? 
+        </h2>
+
+        <br>
+
+        <p>
+            In HTML, it is optional to close empty elements. 
+            <br>
+            <p style="font-size:large;">Allowed:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;meta charset="utf-8"&gt;  
+            </p>
+
+            <br>
+            <br>
+
+            <p style="font-size:large;">Also Allowed:-</p> 
+            <p style="background-color:yellow;border:1px solid black;padding:8px;">
+            &lt;meta charset="utf-8" /&gt;  
+            </p>
+
+            <br>
+            <br>
+
+            If you expect XML/XHTML software to access your page, keep the closing slash (/), because it is required in XML and XHTML. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Add the lang Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            You should always include the lang attribute inside the &lt;html&gt; tag, to declare the language of the Web page. This is meant to assist search engines and browsers. 
+            <br>
+            Example:- 
+            <br>
+            <a href="34. HTML Style Guide-lang Attribute.html" target="_blank">lang Attribute</a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Meta Data 
+        </h2>
+
+        <br>
+
+        <p>
+            To ensure proper interpretation and correct search engine indexing, both the language and the character encoding <span style="color:red;">&lt;meta charset="<i>charset</i>"&gt;</span> should be defined as early as possible in a HTML document:- 
+            <br>
+            Example:- 
+            <br>
+            <p style="background-color:yellow;padding:8px;border:1px solid black;">
+            &lt;!DOCTYPE html&gt; 
+            <br>
+            &lt;html lang="en-US"&gt; 
+            <br>
+            &lt;head&gt; 
+            <br>
+            &lt;meta charset="UTF-8"&gt; 
+            <br>
+            &lt;title&gt;Page Title &lt;/title&gt; 
+            <br>
+            &lt;/head&gt; 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Setting The Viewport 
+        </h2>
+
+        <br>
+
+        <p>
+            The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen. 
+            <br>
+            You should include the following <span style="color:red;">&lt;meta&gt;</span> element in all your web pages:- 
+            <br>
+            <p style="border:1px solid black;padding:8px;">
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
+            </p>
+            <br>
+            This gives the browser instructions on how to control the page's dimensions and scaling. 
+            <br>
+            The <span style="color:red;">width=device-width</span> part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). 
+            <br>
+            The <span style="color:red;">initial-scale=1.0</span> part sets the initial zoom level when the page is first loaded by the browser. 
+            <br>
+            Here is an example of a web page <i>without</i> the viewport meta tag, and the same web page <i>with</i> the viewport meta tag:- 
+            <br>
+            <br>
+            <img src="Image37.png">
+            <img src="Image38.png">
+
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Comments 
+        </h2>
+
+        <br>
+
+
+        <p>
+            Short comments should be written on one line, like this:- 
+            <br>
+            <p style="background-color:yellow;padding:10px;color:green;">
+            &lt;!-- This is a comment --&gt; 
+            </p>
+
+            <br>
+            <br>
+
+            Comments that spans more than one line, should be written like this:- 
+            <br>
+            <p style="background-color:yellow;padding:10px;color:green;">
+            &lt;!-- 
+               <br>
+               This is a long comment example. This is a long comment example.
+               <br>
+               This is a long comment example. This is a long comment example. 
+               <br>
+               --&gt; 
+            </p>
+
+            <br>
+            <br>
+
+            Long Comments are easier to observe if they are indented with two spaces. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Using Style Sheets 
+        </h2>
+
+        <br>
+
+        <p>
+            Use simple syntax for linking to style sheets (the <span style="color:red;">type</span> attribute is not necessary):- 
+            <br>
+            <p style="background-color:yellow;padding:10px;">
+            &lt;link rel="stylesheet" href="styles.css"&gt; 
+            </p>
+            <br>
+            <br>
+            Short CSS rules can be written compressed, like this:- 
+            <br>
+            <p style="background-color:yellow;padding:10px;">
+            p.intro {font-family:Verdana;font-size:16em;}
+            </p>
+            <br>
+            <br>
+            Long CSS rules should be written over multiple lines:- 
+            <br>
+            <p style="background-color:yellow;padding:10px;">
+            body {
+                <br>
+                &nbsp;&nbsp;background-color:lightgrey;
+                <br>
+                &nbsp;&nbsp;font-family:"Arial Black", Helvetica, sans-serif;
+                <br>
+                &nbsp;&nbsp;font-size:16em;
+                <br>
+                &nbsp;&nbsp;color:black;
+                <br>
+            }
+            </p>
+
+            <br>
+            <br>
+
+            <ul>
+                <li>Place the opening bracket on the same line as the selector</li>
+                <li>Use one space before the opening bracket</li>
+                <li>Use two spaces of indentation</li>
+                <li>Use semicolon after each property-value pair, including the last</li>
+                <li>Only use quotes around values if the value contains spaces</li>
+                <li>Place the closing bracket on a new line, without leading spaces</li>
+            </ul>
+
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Loading JavaScript in HTML 
+        </h2>
+
+        <br>
+
+        <p>
+            Use simple syntax for loading external scripts (the type attribute is not necessary):- 
+            <br>
+            <p style="background-color:yellow;padding:10px;">
+            &lt;script src="myscript.js"&gt; 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Accessing HTML Elements with JavaScript 
+        </h2>
+
+        <br>
+
+        <p>
+            Using "untidy" HTML code can result in JavaScript errors. 
+            <br>
+            These two JavaScript statements will produce different results:- 
+            <br>
+            Example:- 
+            <br>
+            <a href="34. HTML Style Guide-JavaScript Errors.html" target="_blank">JavaScript Errors</a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Use Lower Case File Names 
+        </h2>
+
+        <br>
+
+        <p>
+           Some web servers (Apache, Unix) are case sensitive about file names: "london.jpg" cannot be accessed as "London.jpg". 
+           <br>
+           Other web servers (Microsoft, IIS) are not case sensitive: "london.jpg" can be accessed as "London.jpg". 
+           <br>
+           If you use a mix of uppercase and lowercase, you have to be aware of this. 
+           <br>
+           If you move from a case-insensitive to a case-sensitive server, even small errors will break your web! 
+           <br>
+           To avoid these problems, always use lowercase file names!  
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            File Extensions 
+        </h2>
+
+        <br>
+
+        <p>
+            HTML files should have a <b>.html</b> extension (<b>.htm</b> is allowed). 
+            <br>
+            CSS files should have a <b>.css</b> extension. 
+            <br>
+            JavaScript files should have a <b>.js</b> extension. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Difference Between .htm and .html? 
+        </h2>
+
+        <br>
+
+        <p>
+            There is no difference between the .htm and .html file extensions! 
+            <br>
+            Both will be treated as HTML by any web browser and web server. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Default Filenames 
+        </h2>
+
+        <br>
+
+        <p>
+            When a URL does not specify a filename at the end (like "https://www.w3schools.com/"), the server just adds a default filename, such as "index.html", "index.htm", "default.html", or "default.htm". 
+            <br>
+            If your server is configured only with "index.html" as the default filename, your file must be named "index.html", and not "default.html". 
+            <br>
+            However, servers can be configured with more than one default filename; usually you can set up as many default filenames as you want. 
+        </p>
+    </body>
+</html>
