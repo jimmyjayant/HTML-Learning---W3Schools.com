@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Charset 
+        </title>
+        <style>
+            table {
+                border:1px solid grey;
+                border-collapse:collapse;
+            }
+            th {
+                text-align:left;
+            }
+            tr:nth-child(even) {
+                background-color:#f1f1f1;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            HTML Encoding (Character Sets) 
+        </h1>
+
+        <br>
+
+        <p>
+            To display a HTML page correctly, a web browser must know which character set to use. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            From ASCII to UTF-8 
+        </h2>
+
+        <br>
+
+        <p>
+            ASCII was the first character encoding standard. ASCII defined 128 different characters that could be used on the internet: numbers (0-9), English letters (A-Z), and some special characters like ! $ + - () @ &lt; &gt;. 
+            <br>
+            ISO-8859-1 was the default character set for HTML 4. This character set supported 256 different character codes. HTML 4 also supported UTF-8. 
+            <br>
+            ANSI (Windows-1252) was the original Windows character set. ANSI is identical to ISO-8859-1, except that ANSI has 32 extra characters. 
+            <br>
+            The HTML5 specification encourages web developers to use the UTF-8 character set, which covers almost all of the characters and symbols in the world! 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The HTML charset Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            To display a HTML page correctly, a web browser must know the character set used in the page. 
+            <br>
+            This is specified in the &lt;meta&gt; tag:- 
+            <br>
+            <p style="background-color:yellow;padding:10px;border:1px solid black;">
+                &lt;meta charset="UTF-8"&gt; 
+            </p>
+            
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Difference Between Character Sets 
+        </h2>
+
+        <br>
+
+        <p>
+            The following table displays the differences between the character sets described above:- 
+        </p>
+
+        <br>
+
+        <table style="width:100%;">
+
+            <tr>
+                <th>Numb</th>
+                <th>ASCII</th>
+                <th>ANSI</th>
+                <th>8859</th>
+                <th>UTF-8</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Space</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>&#33;</td>
+                <td>&#33;</td>
+                <td>&#33;</td>
+                <td>&#33;</td>
+                <td>Exclamation Mark</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>&#34;</td>
+                <td>&#34;</td>
+                <td>&#34;</td>
+                <td>&#34;</td>
+                <td>Quotation Mark</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>&#35;</td>
+                <td>&#35;</td>
+                <td>&#35;</td>
+                <td>&#35;</td>
+                <td>Number Sign</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>&#36;</td>
+                <td>&#36;</td>
+                <td>&#36;</td>
+                <td>&#36;</td>
+                <td>Dollar Sign</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>&#37;</td>
+                <td>&#37;</td>
+                <td>&#37;</td>
+                <td>&#37;</td>
+                <td>Percent Sign</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>&#38;</td>
+                <td>&#38;</td>
+                <td>&#38;</td>
+                <td>&#38;</td>
+                <td>Ampersand</td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td>&#39;</td>
+                <td>&#39;</td>
+                <td>&#39;</td>
+                <td>&#39;</td>
+                <td>Apostrophe</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>&#40;</td>
+                <td>&#40;</td>
+                <td>&#40;</td>
+                <td>&#40;</td>
+                <td>Left Parenthesis</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>&#41;</td>
+                <td>&#41;</td>
+                <td>&#41;</td>
+                <td>&#41;</td>
+                <td>Right Parenthesis</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td>&#42;</td>
+                <td>&#42;</td>
+                <td>&#42;</td>
+                <td>&#42;</td>
+                <td>Asterisk</td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td>&#43;</td>
+                <td>&#43;</td>
+                <td>&#43;</td>
+                <td>&#43;</td>
+                <td>Plus Sign</td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>&#44;</td>
+                <td>&#44;</td>
+                <td>&#44;</td>
+                <td>&#44;</td>
+                <td>Comma</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>&#45;</td>
+                <td>&#45;</td>
+                <td>&#45;</td>
+                <td>&#45;</td>
+                <td>Hyphen-Minus</td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>&#46;</td>
+                <td>&#46;</td>
+                <td>&#46;</td>
+                <td>&#46;</td>
+                <td>Full Stop</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>&#47;</td>
+                <td>&#47;</td>
+                <td>&#47;</td>
+                <td>&#47;</td>
+                <td>Solidus</td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td>&#48;</td>
+                <td>&#48;</td>
+                <td>&#48;</td>
+                <td>&#48;</td>
+                <td>Digit Zero</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>&#49;</td>
+                <td>&#49;</td>
+                <td>&#49;</td>
+                <td>&#49;</td>
+                <td>Digit One</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>&#50;</td>
+                <td>&#50;</td>
+                <td>&#50;</td>
+                <td>&#50;</td>
+                <td>Digit Two</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>&#51;</td>
+                <td>&#51;</td>
+                <td>&#51;</td>
+                <td>&#51;</td>
+                <td>Digit Three</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>&#52;</td>
+                <td>&#52;</td>
+                <td>&#52;</td>
+                <td>&#52;</td>
+                <td>Digit Four</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>&#53;</td>
+                <td>&#53;</td>
+                <td>&#53;</td>
+                <td>&#53;</td>
+                <td>Digit Five</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td>&#54;</td>
+                <td>&#54;</td>
+                <td>&#54;</td>
+                <td>&#54;</td>
+                <td>Digit Six</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>&#55;</td>
+                <td>&#55;</td>
+                <td>&#55;</td>
+                <td>&#55;</td>
+                <td>Digit Seven</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>&#56;</td>
+                <td>&#56;</td>
+                <td>&#56;</td>
+                <td>&#56;</td>
+                <td>Digit Eight</td>
+            </tr>
+            <tr>
+                <td>57</td>
+                <td>&#57;</td>
+                <td>&#57;</td>
+                <td>&#57;</td>
+                <td>&#57;</td>
+                <td>Digit Nine</td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>&#58;</td>
+                <td>&#58;</td>
+                <td>&#58;</td>
+                <td>&#58;</td>
+                <td>Colon</td>
+            </tr>
+            <tr>
+                <td>59</td>
+                <td>&#59;</td>
+                <td>&#59;</td>
+                <td>&#59;</td>
+                <td>&#59;</td>
+                <td>Semicolon</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>&#60;</td>
+                <td>&#60;</td>
+                <td>&#60;</td>
+                <td>&#60;</td>
+                <td>Less-than Sign</td>
+            </tr>
+            <tr>
+                <td>61</td>
+                <td>&#61;</td>
+                <td>&#61;</td>
+                <td>&#61;</td>
+                <td>&#61;</td>
+                <td>Equals Sign</td>
+            </tr>
+            <tr>
+                <td>62</td>
+                <td>&#62;</td>
+                <td>&#62;</td>
+                <td>&#62;</td>
+                <td>&#62;</td>
+                <td>Greater-than Sign</td>
+            </tr>
+            <tr>
+                <td>63</td>
+                <td>&#63;</td>
+                <td>&#63;</td>
+                <td>&#63;</td>
+                <td>&#63;</td>
+                <td>Question Mark</td>
+            </tr>
+            <tr>
+                <td>64</td>
+                <td>&#64;</td>
+                <td>&#64;</td>
+                <td>&#64;</td>
+                <td>&#64;</td>
+                <td>Commercial At</td>
+            </tr>
+            <tr>
+                <td>65</td>
+                <td>&#65;</td>
+                <td>&#65;</td>
+                <td>&#65;</td>
+                <td>&#65;</td>
+                <td>Latin Capital Letter A</td>
+            </tr>
+            <tr>
+                <td>66</td>
+                <td>&#66;</td>
+                <td>&#66;</td>
+                <td>&#66;</td>
+                <td>&#66;</td>
+                <td>Latin Capital Letter B</td>
+            </tr>
+            <tr>
+                <td>67</td>
+                <td>&#67;</td>
+                <td>&#67;</td>
+                <td>&#67;</td>
+                <td>&#67;</td>
+                <td>Latin Capital Letter C</td>
+            </tr>
+            <tr>
+                <td>68</td>
+                <td>&#68;</td>
+                <td>&#68;</td>
+                <td>&#68;</td>
+                <td>&#68;</td>
+                <td>Latin Capital Letter D</td>
+            </tr>
+            <tr colspan="6">
+                <td>And many many more..........................</td>
+            </tr>
+
+        </table>
+
+        <br>
+        <br>
+
+        <h2>
+            The ASCII Character Set 
+        </h2>
+
+        <br>
+
+        <p>
+            ASCII uses the values from 0 to 31 (and 127) for control characters. 
+            <br>
+            ASCII uses the values from 32 to 126 for letters, digits, and symbols. 
+            <br>
+            ASCII does not use the values from 128 to 255. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The ANSI Character Set (Windows-1252) 
+        </h2>
+
+        <br>
+
+        <p>
+            ANSI is identical to ASCII for the values from 0 to 127. 
+            <br>
+            ANSI has a proprietary set of characters for the values from 128 to 159. 
+            <br>
+            ANSI is identical to UTF-8 for the values from 160 to 255. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The ISO-8859-1 Character Set 
+        </h2>
+
+        <br>
+
+        <p>
+            ISO-8859-1 is identical to ASCII for the values from 0 to 127. 
+            <br>
+            ISO-8859-1 does not use the values from 128 to 159. 
+            <br>
+            ISO-8859-1 is identical to UTF-8 for the values from 160 to 255. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The UTF-8 Character Set 
+        </h2>
+
+        <br>
+
+        <p>
+            UTF-8 is identical to ASCII for the values from 0 to 127. 
+            <br>
+            UTF-8 does not use the values from 128 to 159. 
+            <br>
+            UTF-8 is identical to both ANSI and 8859-1 for the values from 160 to 255. 
+            <br>
+            UTF-8 continues from the values 256 with more than 10000 different characters. 
+        </p>
+
+
+
+
+
+
+    </body>
+</html>

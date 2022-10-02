@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML URL Encode 
+        </title>
+        <style>
+            a {
+                color:black;
+            }
+            a:hover {
+                color:green;
+            }
+            table {
+                border:1px solid grey;
+                border-collapse:collapse;
+            }
+            th {
+                text-align:left;
+            }
+            tr:nth-child(even) {
+                background-color:#f1f1f1;
+            }
+            tr {
+                height:40px;
+            }
+            tr:hover {
+                background-color:aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            HTML Uniform Resource Locators 
+        </h1>
+
+        <br>
+
+        <p>
+            A URL is another word for a web address. 
+            <br>
+            A URL can be composed of words (e.g. w3schools.com), or an Internet Protocol (IP) address (e.g. 192.68.20.50). 
+            <br>
+            Most people enter the name when surfing, because names are easier to remember than numbers. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+           URL - Uniform Resource Locator  
+        </h2>
+
+        <br>
+
+        <p>
+            Web browsers request pages from web servers by using a URL. 
+            <br>
+            A Uniform Resource Locator (URL) is used to address a document (or other data) on the web. 
+            <br>
+            A web address like <a href="https://www.w3schools.com/html/default.asp" target="_blank">https://www.w3schools.com/html/default.asp</a> follows these syntax rules:- 
+            <br>
+            <p style="background-color:yellow;padding:10px;border:1px solid black;">
+            scheme://prefix.domain:port/path/filename
+            </p>
+
+            <br>
+            <br>
+
+            Explanation:- 
+            <br>
+            <br>
+            <ul>
+                <li><b>scheme</b> - defines the <b>type</b> of Internet service (most common is <b>http or https</b>)</li>
+                <li><b>prefix</b> - defines a domain <b>prefix</b> (default for http is <b>www</b>)</li>
+                <li><b>domain</b> - defines the Internet <b>domain name</b> (like w3schools.com)</li>
+                <li><b>port</b> - defines the <b>port number</b> at the host (default for http is <b>80</b>)</li>
+                <li><b>path</b> - defines a <b>path</b> at the server (If omitted: the root directory of the website)</li>
+                <li><b>filename</b> - defines the name of a document or resource</li>
+            </ul>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Common URL Schemes 
+        </h2>
+
+        <br>
+
+        <p>
+            The table below lists some common schemes:- 
+        </p>
+
+        <br>
+
+        <table style="width:100%;">
+            <tr>
+                <th>Scheme</th>
+                <th>Short for</th>
+                <th>Used for</th>
+            </tr>
+            <tr>
+                <td>http</td>
+                <td>HyperText Transfer Protocol</td>
+                <td>Common web pages. Not encrypted</td>
+            </tr>
+            <tr>
+                <td>https</td>
+                <td>Secure HyperText Transfer Protocol</td>
+                <td>Secure web pages. Encrypted</td>
+            </tr>
+            <tr>
+                <td>ftp</td>
+                <td>File Transfer Protocol</td>
+                <td>Downloading or uploading files</td>
+            </tr>
+            <tr>
+                <td>file</td>
+                <td></td>
+                <td>A file on your computer</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <h2>
+            URL Encoding 
+        </h2>
+
+        <br>
+
+        <p>
+            URLs can only be sent over Internet using the ASCII character-set. If a URL contains characters outside the ASCII set, the URL has to be converted. 
+            <br>
+            URL encoding converts non-ASCII characters into a format that can be transmitted over the Internet. 
+            <br>
+            URL encoding replaces non-ASCII characters with a "%" followed by hexadecimal digits. 
+            <br>
+            URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Try It Yourself 
+        </h2>
+
+        <br>
+
+        <p>
+            <input type="text" value="Hello Name">
+            <button type="button" value="Submit">Submit</button>
+            <br>
+            <br>
+            If you click "Submit", the browser will URL encode the input before it is sent to the server. 
+            <br>
+            A page at the server will display the received input. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            ASCII Encoding Examples 
+        </h2>
+
+        <br>
+
+        <p>
+            Your browser will encode input, according to the character-set used in your page. 
+            <br>
+            The default character-set in HTML5 is UTF-8. 
+            <br>
+            <table style="width:100%;">
+            <tr>
+                <th>Character</th>
+                <th>From Windows-1252</th>
+                <th>From UTF-8</th>
+            </tr>
+            <tr>
+                <td>&euro;</td>
+                <td>%80</td>
+                <td>%E2%82%AC</td>
+            </tr>
+            <tr>
+                <td>&pound;</td>
+                <td>%A3</td>
+                <td>%C2%A3</td>
+            </tr>
+            <tr>
+                <td>&copy;</td>
+                <td>%A9</td>
+                <td>%C2%A9</td>
+            </tr>
+            <tr>
+                <td>&reg;</td>
+                <td>%AE</td>
+                <td>%C2%AE</td>
+            </tr>
+            <tr>
+                <td>&#192;</td>
+                <td>%C0</td>
+                <td>%C3%80</td>
+            </tr>
+            <tr>
+                <td>&#193;</td>
+                <td>%C1</td>
+                <td>%C3%81</td>
+            </tr>
+            <tr>
+                <td>&#194;</td>
+                <td>%C2</td>
+                <td>%C3%82</td>
+            </tr>
+            <tr>
+                <td>&#195;</td>
+                <td>%C3</td>
+                <td>%C3%83</td>
+            </tr>
+            <tr>
+                <td>&#196;</td>
+                <td>%C4</td>
+                <td>%C3%84</td>
+            </tr>
+            <tr>
+                <td>&#197;</td>
+                <td>%C5</td>
+                <td>%C4%85</td>
+            </tr>
+            </table>
+        </p>
+    </body>
+</html>
