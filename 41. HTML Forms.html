@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Forms 
+        </title>
+        <style>
+            table {
+                width:100%;
+                border-collapse:collapse;
+                border:1px solid #f1f1f1;
+            }
+            th {
+                text-align:left;
+            }
+            tr {
+                height:40px;
+            }
+            tr:nth-child(even) {
+                background-color:#f1f1f1;
+            }
+            tr:hover {
+                background-color:aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            HTML Forms 
+        </h1>
+
+        <br>
+
+        <p>
+            An HTML Form is used to collect user input. The user input is most often sent to a server for processing. 
+            <br>
+            Example:- 
+            <br>
+            <form>
+                <label for="fname">First name:</label>
+                <br>
+                <input type="text" id="fname" name="fname" value="John">
+                <br>
+                <label for="lname">Last name:</label>
+                <br>
+                <input type="text" id="lname" name="lname" value="Doe">
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The &lt;form&gt; Element 
+        </h2>
+
+        <br>
+
+        <p>
+            The HTML &lt;form&gt; element is used to create a HTML form for user input:- 
+            <br>
+            <p style="background-color:yellow;padding:10px;border:1px solid black;">
+            &lt;form&gt; 
+            <br>
+            . 
+            <br>
+            <i>form elements</i>
+            <br>
+            . 
+            <br>
+            &lt;/form&gt; 
+            </p>
+
+            <br>
+            The &lt;form&gt; element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The &lt;input&gt; Element 
+        </h2>
+
+        <br>
+
+        <p>
+            The HTML &lt;input&gt; element is the most used form element. 
+            <br>
+            An &lt;input&gt; element can be displayed in many ways, depending on the type attribute. 
+            <br>
+            Here are some examples:- 
+            <br>
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;input type="text"&gt;</td>
+                    <td>Displays a single-line text input field</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="radio"&gt;</td>
+                    <td>Displays a radio button (for selecting one of many choices)</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="checkbox"&gt;</td>
+                    <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="submit"&gt;</td>
+                    <td>Displays a submit button (for submitting the form)</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="button"&gt;</td>
+                    <td>Displays a clickable button</td>
+                </tr>
+            </table>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Text Fields 
+        </h2>
+
+        <br>
+
+        <p>
+            The &lt;input type="text"&gt; defines a single-line input field for text input. 
+            <br>
+            Example:- 
+            <br>
+            A form with input fields for text:- 
+            <br>
+            <form>
+                <label for="fname">First Name:</label>
+                <br>
+                <input type="text" id="fname" name="fname" value="John">
+                <br>
+                <label for="lname">Last Name:</label>
+                <br>
+                <input type="text" id="lname" name="lname" value="Doe">
+            </form>
+            <p>
+                Notice that the form itself is not visible. 
+            </p>
+            <p>
+                Also note that the default width of text input fields is 20 characters. 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The &lt;label&gt; Element 
+        </h2>
+
+        <br>
+
+        <p>
+            Notice the use of the &lt;label&gt; element in the example above. 
+            <br>
+            The &lt;label&gt; tag defines a label for many form elements. 
+            <br>
+            The &lt;label&gt; element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element. 
+            <br>
+            The &lt;label&gt; element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the &lt;label&gt; element, it toggles the radio button/checkbox. 
+            <br>
+            The for attribute of the &lt;label&gt; tag should be equal to the id attribute of the &lt;input&gt; element to bind them together.  
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Radio Buttons 
+        </h2>
+
+        <br>
+
+        <p>
+            The &lt;input type="radio"&gt; defines a radio button. 
+            <br>
+            Radio buttons let a user select ONE of a limited number of choices. 
+            <br>
+            Example:- 
+            <br>
+            A form with radio buttons:- 
+            <br>
+            <p>Choose your favourite Web language:- </p>
+
+            <form>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label>
+                <br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label>
+                <br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </form>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Checkboxes 
+        </h2>
+
+        <br>
+
+        <p>
+            The &lt;input type="checkbox"&gt; defines a <b>checkbox</b>. 
+            <br>
+            Checkboxes let a user select ZERO or MORE options of a limited number of choices. 
+            <br>
+            Example:- 
+            <br>
+            A form with checkboxes:- 
+            <br>
+            <form>
+             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+             <label for="vehicle1">I have a bike</label>
+             <br>
+             <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+             <label for="vehicle2">I have a Car</label>
+             <br>
+             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+             <label for="vehicle3">I have a Boat</label>
+             <br>
+             <br>
+             <input type="submit" value="Submit">   
+            </form>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The Submit Button 
+        </h2>
+
+        <br>
+
+        <p>
+            The &lt;input type="submit"&gt; defines a button for submitting the form data to a form-handler. 
+            <br>
+            THe form-handler is typically a file on the server with a script for processing input data. 
+            <br>
+            The form-handler is specified in the form's action attribute. 
+            <br>
+            Example:- 
+            <br>
+            A form with a submit button:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php">
+            <label for="fname">First Name:</label>
+            <br>
+            <input type="text" id="fname" name="fname" value="John">
+            <br>
+            <label for="lname">Last Name:</label>
+            <br>
+            <input type="text" id="lname" name="lname" value="Doe">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            </form>
+            <p>
+                If you click on the "Submit" button, the form-data will be sent to a page called "/action_page.php". 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The Name Attribute for &lt;input&gt; 
+        </h2>
+
+        <br>
+
+        <p>
+            Notice that each input field must have a name attribute to be submitted. 
+            <br>
+            If the name attribute is omitted, the value of the input field will not be sent at all. 
+            <br>
+            Example:- 
+            <br>
+            This example will not submit the value of the "First name" input field:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php">
+            <label for="fname">First Name:</label>
+            <br>
+            <input type="text" id="fname" value="John">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            </form>
+        </p>
+
+    </body>
+
+
+</html>
