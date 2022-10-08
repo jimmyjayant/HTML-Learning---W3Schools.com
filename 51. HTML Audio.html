@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Audio 
+        </title>
+        <style>
+             #table1 {
+                border:1px solid grey;
+                width:100%;
+                border-collapse:collapse;
+             }
+             #table1 th {
+                text-align:left;
+                border:1px solid grey;
+             }
+             #table1 td {
+                text-align:center;
+                border:1px solid grey;
+             }
+             #table1 tr:nth-child(even) {
+                background-color:#f1f1f1;
+             }
+             #table1 tr {
+                height:50px;
+             }
+
+             #table2 {
+                border:1px solid #f1f1f1;
+                width:100%;
+                border-collapse:collapse;
+             }
+             #table2 td {
+                text-align:center;
+             }
+             #table2 tr:nth-child(even) {
+                background-color:#f1f1f1;
+             }
+             #table2 tr {
+                height:40px;
+             }
+
+             #table3 {
+                border:1px solid #f1f1f1;
+                width:70%;
+                border-collapse:collapse;
+             }
+             #table3 th {
+                text-align:left;
+             }
+             #table3 tr:nth-child(even) {
+                background-color:#f1f1f1;
+             }
+             #table3 tr {
+                height:40px;
+             }
+             #table4 {
+                border:1px solid #f1f1f1;
+                width:50%;
+                border-collapse:collapse;
+             }
+             #table4 th {
+                text-align:left;
+             }
+             #table4 tr:nth-child(even) {
+                background-color:#f1f1f1;
+             }
+             #table4 tr {
+                height:40px;
+             }
+        </style>
+    </head>
+    <body>
+        <h1>
+            HTML Audio 
+        </h1>
+
+        <br>
+
+        <p>
+            The HTML <span style="color:red;background-color:#f1f1f1;">&lt;audio&gt;</span> element is used to play an audio file on a web page. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The HTML &lt;audio&gt; Element 
+        </h2>
+
+        <br>
+
+        <p>
+            To play an audio file in HTML, use the <span style="color:red;background-color:#f1f1f1;">&lt;audio&gt;</span> element. 
+            <br>
+            Example:- 
+            <br>
+            <audio controls>
+                <source src="Sound1.ogv" type="audio/ogg">
+                <source src="Sound1.mp3" type="audio/mp3">
+                Your browser does not support the audio element. 
+            </audio>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Audio - How It Works 
+        </h2>
+
+        <br>
+
+        <p>
+            The <span style="color:red;background-color:#f1f1f1;">controls</span> attribute adds audio controls, like play, pause, and volume. 
+            <br>
+            The <span style="color:red;background-color:#f1f1f1;">&lt;source&gt;</span> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format. 
+            <br>
+            The text between the <span style="color:red;background-color:#f1f1f1;">&lt;audio&gt;</span> and <span style="color:red;background-color:#f1f1f1;">&lt;/audio&gt;</span> tags will only be displayed in browsers that do not support the <span style="color:red;background-color:#f1f1f1;">&lt;audio&gt;</span> element.  
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML &lt;audio&gt; Autoplay 
+        </h2>
+
+        <br>
+
+        <p>
+          To start an audio file automatically, use the <span style="color:red;background-color:#f1f1f1;">autoplay</span> attribute. 
+          <br>
+          Example:- 
+          <br>
+           <audio controls autoplay>
+            <source src="Sound1.ogv" type="audio/ogg">
+            Your browser does not support audio element. 
+           </audio> 
+
+           <br>
+           <br>
+
+           <p style="background-color:yellow;border:1px solid black;padding:10px;">
+           <b>Note:- </b>Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed. 
+           </p>
+
+           <br>
+           <br>
+
+           Add <span style="color:red;background-color:#f1f1f1;">muted</span> after <span style="color:red;background-color:#f1f1f1;">autoplay</span> to let your audio file start playing automatically (but muted). 
+           <br>
+           Example:- 
+           <br>
+           <audio controls autoplay muted>
+            <source src="Sound1.ogv" type="audio/ogg">
+            Your browser does not support audio element. 
+           </audio> 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Browser Support 
+        </h2>
+
+        <br>
+
+        <p>
+            The numbers in the table specify the first browser version that fully supports the <span style="color:red;background-color:#f1f1f1;">&lt;audio&gt;</span> element. 
+            <br>
+            <br>
+            <table id="table1">
+                <tr>
+                    <th>Element</th>
+                    <td><img src="Image45.svg.png" height="48" width="48"></td>
+                    <td><img src="Image46.png" height="48" width="48"></td>
+                    <td><img src="Image47.png" height="48" width="48"></td>
+                    <td><img src="Image48.png" height="48" width="48"></td>
+                    <td><img src="Image49.png" height="48" width="48"></td>
+                </tr>
+                <tr>
+                    <th>&lt;audio&gt;</th>
+                    <td>4.0</td>
+                    <td>9.0</td>
+                    <td>3.5</td>
+                    <td>4.0</td>
+                    <td>10.5</td>
+                </tr>
+            </table>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Audio Formats 
+        </h2>
+
+        <br>
+
+        <p>
+            There are three supported audio formats:- MP3, WAV, and OGG. The browser support for the different formats is:- 
+            <br>
+            <br>
+            <table id="table2">
+                <tr>
+                    <th>Browser</th>
+                    <th>MP3</th>
+                    <th>WAV</th>
+                    <th>OGG</th>
+                </tr>
+                <tr>
+                    <td>Edge/IE</td>
+                    <td>YES</td>
+                    <td>YES*</td>
+                    <td>YES*</td>
+                </tr>
+                <tr>
+                    <td>Chrome</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                </tr>
+                <tr>
+                    <td>Firefox</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                </tr>
+                <tr>
+                    <td>Safari</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>Opera</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                </tr>
+            </table>
+            <p>*From Edge 79</p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Audio - Media Types 
+        </h2>
+
+        <br>
+
+        <table id="table3">
+            <tr>
+                <th>File Format</th>
+                <th>Media Type</th>
+            </tr>
+            <tr>
+                <td>MP3</td>
+                <td>audio/mpeg</td>
+            </tr>
+            <tr>
+                <td>OGG</td>
+                <td>audio/ogg</td>
+            </tr>
+            <tr>
+                <td>WAV</td>
+                <td>audio/wav</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Audio - Methods, Properties, and Events 
+        </h2>
+
+        <br>
+
+        <p>
+            The HTML DOM defines methods, properties, and events for the <span style="color:red;background-color:#f1f1f1;">&lt;audio&gt;</span> element. 
+            <br>
+            This allows you to load, play, and pause audios, as well as set duration and volume. 
+            <br>
+            There are also DOM events that can notify you when an audio begins to play, is paused, etc. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Audio Tags 
+        </h2>
+
+        <br>
+
+        <table id="table4">
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>&lt;audio&gt;</td>
+                <td>Defines sound content</td>
+            </tr>
+            <tr>
+                <td>&lt;source&gt;</td>
+                <td>Defines multiple media resources for media elements, such as &lt;video&gt; and &lt;audio&gt;</td>
+            </tr>
+        </table>
+
+
+
+
+
+    </body>
+</html>

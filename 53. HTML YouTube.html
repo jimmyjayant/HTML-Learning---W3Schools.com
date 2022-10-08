@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML YouTube 
+        </title>
+    </head>
+    <body>
+        <h1>
+            HTML YouTube Videos 
+        </h1>
+
+        <br>
+
+        <p>
+            The easiest way to play videos in HTML, is to use YouTube. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Struggling with Video Formats? 
+        </h2>
+
+        <br>
+
+        <p>
+            Converting videos to different formats can be difficult and time-consuming. 
+            <br>
+            An easier solution is to let YouTube play the videos in your web page. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            YouTube Video Id 
+        </h2>
+
+        <br>
+
+        <p>
+            YouTube will display an id (like tgbNymZ7vqY), when you save (or play) a video. 
+            <br>
+            You can use this id, and refer to your video in the HTML code. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Playing a YouTube Video in HTML 
+        </h2>
+
+        <br>
+
+        <p>
+            To play your video on a web page, do the following:- 
+            <br>
+            <ul>
+                <li>Upload the video to YouTube</li>
+                <li>Take a note of the Video id</li>
+                <li>Define an <span style="color:red;background-color:#f1f1f1;">&lt;iframe&gt;</span> element in your web page</li>
+                <li>Let the <span style="color:red;background-color:#f1f1f1;">src</span> attribute point to the video URL</li>
+                <li>Use the <span style="color:red;background-color:#f1f1f1;">width</span> and <span style="color:red;background-color:#f1f1f1;">height</span> attributes to specify the dimension of the player</li>
+                <li>Add any other parameters to the URL (see below)</li>
+            </ul>
+
+            <br>
+            Example:- 
+            <br>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            YouTube Autoplay + Mute 
+        </h2>
+
+        <br>
+
+        <p>
+            You can let your video start playing automatically when a user visits the page, by adding <span style="color:red;background-color:#f1f1f1;">autoplay=1</span> to the YouTube URL. However, automatically starting a video is annoying for your visitors! 
+
+            <br>
+            <br>
+
+            <p style="background-color:yellow;padding:15px;">
+            <b>Note:- </b>Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed. 
+            </p>
+
+            <br>
+
+            Add <span style="color:red;background-color:#f1f1f1;">mute=1</span> after <span style="color:red;background-color:#f1f1f1;">autoplay=1</span> to let your video start playing automatically (but muted). 
+            <br>
+            Example:- 
+            <br>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            YouTube Playlist 
+        </h2>
+
+        <br>
+
+        <p>
+            A comma separated list of videos to play (in addition to the original URL). 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            YouTube Loop 
+        </h2>
+
+        <br>
+
+        <p>
+           Add <span style="color:red;background-color:#f1f1f1;">loop=1</span> to let your video loop forever. 
+           <br>
+           Value 0 (default): The video will play only once. 
+           <br>
+           Value 1: The video will loop (forever). 
+           <br>
+           Example:- 
+           <br>
+           <iframe width="400" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"></iframe>
+           <br>
+           <iframe width="400" height="345" src="https://www.youtube.com/embed/a8Gx8wiNbs8"></iframe>
+           <br>
+           <iframe width="500" height="400" src="https://www.youtube.com/embed/EiKXJ-ObtGk"></iframe>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            YouTube Controls 
+        </h2>
+
+        <br>
+
+        <p>
+            Add <span style="color:red;background-color:#f1f1f1;">controls=0</span> to not display controls in the video player. 
+            <br>
+            Value 0: Player controls does not display. 
+            <br>
+            Value 1 (default): Player controls display. 
+            <br>
+            Example:- 
+            <br>
+            <iframe width="500" height="400" src="https://www.youtube.com/embed/EiKXJ-ObtGk?controls=0"></iframe>
+        </p>
+
+
+
+        
+    </body>
+</html>
