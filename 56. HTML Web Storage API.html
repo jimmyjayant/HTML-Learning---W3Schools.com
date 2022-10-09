@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Web Storage 
+        </title>
+        <style>
+            #table1 {
+                border:1px solid grey;
+                border-collapse:collapse;
+                width:80%;
+            }
+            #table1 tr {
+                height:48px;
+            }
+            #table1 tr:nth-child(even) {
+                background-color:#d3d3d3;
+            }
+            #table1 th {
+                text-align:left;
+                border:1px solid grey;
+                width:20%;
+            }
+            #table1 td {
+                text-align:center;
+                border:1px solid grey;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            HTML Web Storage API 
+        </h1>
+
+        <br>
+
+        <p>
+            HTML web storage; better than cookies. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            What is HTML Web Storage? 
+        </h2>
+
+        <br>
+
+        <p>
+            With web storage, web applications can store data locally within the user's browser. 
+            <br>
+            Before HTML5, application data had to be stored in cookies, included in every server request. Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance. 
+            <br>
+            Unlike cookies, the storage limit is far larger (atleast 5MB) and information is never transferred to the server. 
+            <br>
+            Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Browser Support 
+        </h2>
+
+        <br>
+
+        <p>
+            The numbers in the table specify the first browser version that fully supports Web Storage. 
+            <br>
+            <table id="table1">
+                <tr>
+                    <th>API</th>
+                    <td><img src="Image45.svg.png" height="40" width="40" alt=""></td>
+                    <td><img src="Image46.png" height="40" width="40" alt=""></td>
+                    <td><img src="Image47.png" height="40" width="40" alt=""></td>
+                    <td><img src="Image48.png" height="40" width="40" alt=""></td>
+                    <td><img src="Image49.png" height="40" width="40" alt=""></td>
+                </tr>
+                <tr>
+                    <th>Web Storage</th>
+                    <td>4.0</td>
+                    <td>8.0</td>
+                    <td>3.5</td>
+                    <td>4.0</td>
+                    <td>11.5</td>
+                </tr>
+            </table>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Web Storage Objects 
+        </h2>
+
+        <br>
+
+        <p>
+            HTML web storage provides two objects for storing data on the client:- 
+            <br>
+            <ul>
+                <li><span style="color:red;background-color:#f1f1f1;">window.localStorage</span> - stores data with no expiration date</li>
+                <li><span style="color:red;background-color:#f1f1f1;">window.sessionStorage</span> - stores data for one session (data is lost when the browser tab is closed)</li>
+            </ul>
+            <br>
+            Before using web storage, check browser support for localStorage and sessionStorage:- 
+            <br>
+            <p style="border:1px solid grey;padding:5px;">
+            if (typeof(Storage)!== "undefined")
+            <br>
+            {
+                <br>
+                //Code for localStorage/sessionStorage. 
+                <br>
+            }
+            <br>
+            else
+            <br>
+            {
+                <br>
+                //Sorry! No Web Storage support.....
+                <br>
+            }
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The localStorage Object 
+        </h2>
+
+        <br>
+
+        <p>
+            The localStorage object stores the data with no expiration date. The data will not be deleted when the browser is closed, and will be available for the next day, week, or year. 
+            <br>
+            Example:- 
+            <br>
+            <div id="result"></div>
+
+            <br>
+            <br>
+
+            Example explained:- 
+            <br>
+            <ul>
+                <li>Create a localStorage name/value pair with name="lastname" and value="Smith"</li>
+                <li>Retrieve the value of "lastname" and insert it into the element with id="result"</li>
+            </ul>
+
+            <br>
+            <br>
+
+            The example above could also be written like this:- 
+            <br>
+            <p style="border:1px solid grey;padding:10px;">
+            //Store
+            <br>
+            localStorage.lastname = "Smith";
+            <br>
+            //Retrieve
+            <br>
+            document.getElementById("result").innerHTML = localStorage.lastname;
+
+            </p>
+
+            <br>
+            <br>
+
+            The syntax for removing the "lastname" localStorage item is as follows:- 
+            <br>
+            <p style="border:1px solid grey;padding:5px;">
+            localStorage.removeItem("lastname");
+            </p>
+
+            <br>
+            <br>
+
+            <b>Note:- </b>Name/value pairs are always stored as strings. Remember to convert them to another format when needed! 
+
+            <br>
+            <br>
+
+            The following example counts the number of times a user has clicked a button. In this code the value string is converted to a number to be able to increase the counter:- 
+            <br>
+            <p>
+                <button onclick="clickCounter()" type="button">Click Me!</button>
+                <button onclick="clickStop()" type="button">Click to Reset</button>
+            </p>
+            <div id="counter">
+
+            </div>
+            <p>
+                Click the button to see the counter increase.
+            </p>
+            <p>
+                Close the browser tab (or Window), and try again, and the counter will countinue to count (is not reset). 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The sessionStorage Object 
+        </h2>
+
+        <br>
+
+        <p>
+            The sessionStorage object is equal to the localStorage object, <b>except</b> that it stores the data for only one session. The data is deleted when the user closes the specific browser tab. 
+            <br>
+            The following example counts the number of times a user has clicked a button, in the current session. 
+            <br>
+            <p>
+                <button onclick="clicksessionCounter()" type="button">Click To Count</button>
+            </p>
+            <div id="session">
+
+            </div>
+            <p>
+                Click the button to see the counter increase. 
+            </p>
+            <p>
+                Close the browser tab (or window), and try again, and the counter is reset. 
+            </p>
+        </p>
+
+
+
+    <script>
+        //Check browser support
+        if(typeof(Storage)!=="undefined")
+        {
+            //Store
+            localStorage.setItem("lastname","Smith");
+            //Retrieve
+            document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+        }
+        else
+        {
+            //If browser does not support Web Storage
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage.......";
+        }
+
+        function clickCounter()
+        {
+            if(typeof(Storage)!=="undefined")
+            {
+                if(localStorage.clickcount)
+                {
+                    localStorage.clickcount = Number(localStorage.clickcount)+1;
+                }
+                else
+                {
+                    localStorage.clickcount = 1;
+                }
+                document.getElementById("counter").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+            }
+            else 
+            {
+               document.getElementById("counter").innerHTML = "Sorry, your browser does not support Web Storage........"; 
+            }
+        }
+
+        function clickStop()
+        {
+            localStorage.removeItem("clickcount");
+        }
+        
+        function clicksessionCounter()
+        {
+            if(typeof(Storage)!=="undefined")
+            {
+                if(sessionStorage.sessioncount)
+                {
+                    sessionStorage.sessioncount = Number(sessionStorage.sessioncount) + 1;
+                }
+                else
+                {
+                    sessionStorage.sessioncount = 1;
+                }
+                document.getElementById("session").innerHTML = "You have clicked the button " + sessionStorage.sessioncount + "time(s)."; 
+            }
+            else
+            {
+                document.getElementById("session").innerHTML = "Sorry, your browser does not support Web Storage.......";
+            }
+        }
+    </script>
+    </body>
+</html>
