@@ -48,6 +48,23 @@
                 margin:20px;
                 border:1px solid grey;
             }
+            #div0 {
+                float:left;
+                width:350px;
+                height:100px;
+                padding:10px;
+                margin:20px;
+                border:1px solid grey;
+            }
+            #div01 {
+                float:left;
+                width:350px;
+                height:100px;
+                padding:10px;
+                margin:20px;
+                border:1px solid grey;
+
+            }
         </style>
     </head>
     <body>
@@ -65,12 +82,17 @@
             Example:- 
             <br>
             <p>Drag the W3Schools image into the rectangle. </p>
+            <br>
+            <div id="div0" ondragover="allowDrop(event)" ondrop="drop(event)">
+                <img src="Image53.gif" id="img" draggable="true" ondragstart="drag(event)">
+            </div>
+            <div id="div01" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
         </p>
 
         <br>
         <br>
 
-        <h2>
+        <h2 style="clear:both;">
             Drag and Drop 
         </h2>
 
