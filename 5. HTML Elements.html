@@ -1,9 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-IN">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             HTML Elements 
         </title>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
+            table {
+                border:1px solid black;
+                border-collapse:collapse;
+            }
+
+            table td, th {
+                border:1px solid black;
+                padding:10px;
+            }
+        </style>
     </head>
 
     <body>
@@ -11,6 +52,14 @@
             HTML Elements 
         </h1>
 
+        <br>
+        <br>
+
+        <a href="4. HTML Basic.html" title="HTML Basic" id="previousbutton">Previous</a>
+                
+        <a href="6. HTML Attributes.html" title="HTML Attributes" id="nextbutton">Next</a>
+
+        <br>
         <br>
 
         <p>
@@ -41,11 +90,11 @@
     <br>
     <br>
 
-    <table border="2">
+    <table>
         <tr>
-            <td>Start Tag</td>
-            <td>Element Content</td>
-            <td>End Tag</td>
+            <th>Start Tag</th>
+            <th>Element Content</th>
+            <th>End Tag</th>
         </tr>
         <tr>
             <td>&lt;h1&gt;</td>
@@ -205,7 +254,7 @@
 <br>
 <br>
 
-<table border="2">
+<table>
     <tr>
         <td>&lt;html&gt;</td>
         <td>Defines the root of an HTML document</td>
@@ -220,8 +269,14 @@
     </tr>
 </table>
 
+<br>
+<br>
 
+<a href="4. HTML Basic.html" title="HTML Basic" id="previousbutton">Previous</a>
+                
+<a href="6. HTML Attributes.html" title="HTML Attributes" id="nextbutton">Next</a>
 
-
+<br>
+<br>
     </body>
 </html>

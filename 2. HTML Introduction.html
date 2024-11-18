@@ -1,15 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-IN">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             HTML Introduction
         </title>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
+            table {
+                border:1px solid black;
+                border-collapse:collapse;
+            }
+
+            table td {
+                border:1px solid black;
+                padding:10px;
+            }
+        </style>
     </head>
 
     <body>
         <h1>
             HTML Introduction
         </h1>
+
+        <a href="1. HTML Home.html" title="HTML Home" id="previousbutton">Previous</a>
+        
+        <a href="3. HTML Editors.html" title="HTML Editors" id="nextbutton">Next</a>
+
+        <br>
+        <br>
 
         <p>
             HTML is the standard markup language for creating web pages. 
@@ -105,7 +153,7 @@
         <br>
         <br>
 
-        <table border="2">
+        <table>
             <tr>
                 <td>Start Tag</td>
                 <td>Element Content</td>
@@ -197,7 +245,7 @@
         <br>
         <br>
 
-        <table border="2">
+        <table>
             <tr>
                 <td>Year</td>
                 <td>Version</td>
@@ -254,7 +302,15 @@
                 <td>2017</td>
                 <td>W3C Recommendation: HTML5.2</td>
             </tr>
-
         </table>
+
+        <br>
+
+        <a href="1. HTML Home.html" title="HTML Home" id="previousbutton">Previous</a>
+        
+        <a href="3. HTML Editors.html" title="HTML Editors" id="nextbutton">Next</a>
+
+        <br>
+        <br>
     </body>
 </html>

@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-IN">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             HTML Links - Link Bookmarks 
         </title>
-    </head>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
 
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+        </style>
+    </head>
     <body>
         <h1>
             HTML Links - Create Bookmarks 
         </h1>
 
+        <br>
+
+        <a href="18. HTML Links-Different Colors.html" title="HTML Links-Different Colors" id="previousbutton">Previous</a>
+                
+        <a href="19. HTML Images.html" title="HTML Images" id="nextbutton">Next</a>
+
+        <br>
         <br>
 
         <p>
@@ -76,5 +113,14 @@
                 <li>Use the href attribute (<i>href="#value"</i>) to link to a bookmark. </li>
             </ul>
         </p>
+
+        <br>
+
+        <a href="18. HTML Links-Different Colors.html" title="HTML Links-Different Colors" id="previousbutton">Previous</a>
+                
+        <a href="19. HTML Images.html" title="HTML Images" id="nextbutton">Next</a>
+
+        <br>
+        <br>
     </body>
 </html>

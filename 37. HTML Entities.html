@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            HTML Entities 
+        </title>
+        <style>
+           #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
+            th {
+                text-align:left;
+            }
+            tr {
+                height:40px;
+            }
+            table {
+                border:1px solid grey;
+                border-collapse:collapse;
+            }
+            tr:nth-child(even) {
+                background-color:lightgrey;
+            }
+            table a {
+                padding:5px;
+                background-color:rgb(68, 187, 68);
+                margin:5px;
+                color:white;
+                font-weight:bold;
+            }
+            table a:hover {
+                background-color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            HTML Entities 
+        </h1>
+
+        <br>
+
+        <a href="36. HTML Style Guide.html" title="HTML Style Guide" id="previousbutton">Previous</a>
+                
+        <a href="38. HTML Symbols.html" title="HTML Symbols" id="nextbutton">Next</a>
+
+        <br>
+        <br>
+
+        <p>
+            Reserved characters in HTML must be replaced with character entities. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Entities 
+        </h2>
+
+        <br>
+
+        <p>
+            Some characters are reserved in HTML. 
+            <br>
+            If you use the less than (&lt;) or greater than (&gt;) signs in your text, the browser might mix them with tags. 
+            <br>
+            Character entities are used to display reserved characters in HTML. 
+            <br>
+            A character entity looks like this:- 
+            <br>
+            <p style="background-color:yellow;padding:10px;border:1px solid black;">
+            &<i>entity_name</i>;
+            <br>
+            <br>
+            OR
+            <br>
+            <br>
+            &#<i>entity_number</i>;
+            </p>
+
+            <br>
+            <br>
+
+            To display a less than sign (&lt;) we must write: <b>&amp;lt;</b> or <b>&amp;#60;</b>. 
+
+            <br>
+            <br>
+
+            <p style="background-color:yellow;padding:10px;">
+            <b>Advantage of using an entity name:</b> An entity name is easy to remember. 
+            <br>
+            <b>Disadvantage of using an entity name:</b> Browsers may not support all entity names, but the support for entity numbers is good. 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Non-breaking Space 
+        </h2>
+
+        <br>
+
+        <p>
+            A commonly used entity in HTML is the non-breaking space: <b>&amp;nbsp;</b>
+            <br>
+            A non-breaking space is a space that will not break into a new line. 
+            <br>
+            Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive. 
+            <br>
+            Examples:- 
+            <br>
+            <ul>
+                <li>§ 10</li>
+                <li>10 km/h</li>
+                <li>10 PM</li>
+            </ul>
+            <br>
+            Another common use of the non-breaking space is to prevent browsers from truncating spaces in HTML pages. 
+            <br>
+            If you write 10 spaces in your text, the browser will remove 9 of them. To add real spaces to your text, you can use the <b>&amp;nbsp;</b> character entity. 
+            <br>
+            <p style="background-color:lightyellow;padding:10px;">
+            <b>Tip: </b>The non-breaking hyphen (&amp;#8209;) is used to define a hyphen character (-) that does not break into a new line. 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Some Useful HTML Character Entities 
+        </h2>
+
+        <br>
+
+        <table style="width:100%;">
+        <tr>
+            <th>Result</th>
+            <th>Description</th>
+            <th>Entity Name</th>
+            <th>Entity Number</th>
+            <th>Try it</th>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>non-breaking space</td>
+            <td>&amp;nbsp;</td>
+            <td>&amp;#160;</td>
+            <td><a href="37. HTML Entities-Non Breaking Space.html" target="_blank">Try it &gt;&gt;</a></td>
+        </tr>
+        <tr>
+            <td>&lt;</td>
+            <td>less than</td>
+            <td>&amp;lt;</td>
+            <td>&amp;#60;</td>
+            <td><a href="37. HTML Entities-Less Than.html" target="_blank">Try it &gt;&gt;</a></td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>greater than</td>
+            <td>&amp;gt;</td>
+            <td>&amp;#62;</td>
+            <td><a href="37. HTML Entities-Greater Than.html" target="_blank">Try it &gt;&gt;</a></td>
+        </tr>
+        <tr>
+            <td>&</td>
+            <td>ampersand</td>
+            <td>&amp;amp;</td>
+            <td>&amp;#38;</td>
+            <td><a href="37. HTML Entities-Ampersand.html" target="_blank">Try it &gt;&gt;</a></td>
+        </tr>
+        <tr>
+            <td>"</td>
+            <td>double quotation mark</td>
+            <td>&amp;quot;</td>
+            <td>&amp;#34;</td>
+            <td><a href="37. HTML Entities-Double Quotation Mark.html" target="_blank">Try it &gt;&gt;</a></td>
+        </tr>
+        <tr>
+            <td>'</td>
+            <td>single quotation mark (apostrophe)</td>
+            <td>&amp;apos;</td>
+            <td>&amp;#39;</td>
+            <td><a href="37. HTML Entities-Single Quotation Mark.html" target="_blank">Try it &gt;&gt;</a></td>
+        </tr>
+        <tr>
+            <td>&cent;</td>
+            <td>cent</td>
+            <td>&amp;cent;</td>
+            <td>&amp;#162;</td>
+            <td><a href="37. HTML Entities-Cent.html" target="_blank">Try it &gt;&gt;</a></td>
+        </tr>
+        <tr>
+            <td>&pound;</td>
+            <td>pound</td>
+            <td>&amp;pound;</td>
+            <td>&amp;#163;</td>
+            <td><a href="37. HTML Entities-Pound.html" target="_blank">Try it &gt;&gt;</a></td>
+        </tr>
+        <tr>
+            <td>&yen;</td>
+            <td>yen</td>
+            <td>&amp;yen;</td>
+            <td>&amp;#165;</td>
+            <td><a href="37. HTML Entities-Yen.html" target="_blank">Try it &gt;&gt;</a></td>
+        </tr>
+        <tr>
+            <td>&euro;</td>
+            <td>euro</td>
+            <td>&amp;euro;</td>
+            <td>&amp;#8364;</td>
+            <td><a href="37. HTML Entities-Euro.html" target="_blank">Try it &gt;&gt;</a></td>
+        </tr>
+        <tr>
+            <td>&copy;</td>
+            <td>copyright</td>
+            <td>&amp;copy;</td>
+            <td>&amp;#169;</td>
+            <td><a href="37. HTML Entities-Copyright.html" target="_blank">Try it &gt;&gt;</a></td>
+        </tr>
+        <tr>
+            <td>&reg;</td>
+            <td>registered trademark</td>
+            <td>&amp;reg;</td>
+            <td>&amp;#174;</td>
+            <td><a href="37. HTML Entities-Registered Trademark.html" target="_blank">Try it &gt;&gt;</a></td>
+        </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <p style="background-color:rgb(251, 251, 123);padding:10px;">
+        <b>Note: </b>Entity names are case sensitive. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Combining Diacritical Marks 
+        </h2>
+
+        <br>
+
+        <p>
+            A diacritical mark is a "glyph" added to a letter. 
+            <br>
+            Some diacritical marks, like grave (`) and acute ( ́ ) are called accents. 
+            <br>
+            Diacritical marks can appear both above and below a letter, inside a letter, and between two letters. 
+            <br>
+            Diacritical marks can be used in combination with alphanumeric characters to produce a character that is not present in the character set (encoding) used in the page. 
+            <br>
+            Here are some examples:- 
+            <br>
+            <table style="width:100%;">
+                <tr>
+                    <th>Mark</th>
+                    <th>Character</th>
+                    <th>Construct</th>
+                    <th>Result</th>
+                    <th>Try it</th>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&#768;</td>
+                    <td>a</td>
+                    <td>a&amp;#768;</td>
+                    <td>a&#768;</td>
+                    <td><a href="37. HTML Entities-a768.html" target="_blank">Try it &gt; &gt; </a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&#769;</td>
+                    <td>a</td>
+                    <td>a&amp;#769;</td>
+                    <td>a&#769;</td>
+                    <td><a href="37. HTML Entities-a769.html" target="_blank">Try it &gt; &gt; </a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&#770;</td>
+                    <td>a</td>
+                    <td>a&amp;#770;</td>
+                    <td>a&#770;</td>
+                    <td><a href="37. HTML Entities-a770.html" target="_blank">Try it &gt; &gt; </a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&#771;</td>
+                    <td>a</td>
+                    <td>a&amp;#771;</td>
+                    <td>a&#771;</td>
+                    <td><a href="37. HTML Entities-a771.html" target="_blank">Try it &gt; &gt; </a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&#768;</td>
+                    <td>O</td>
+                    <td>O&amp;#768;</td>
+                    <td>O&#768;</td>
+                    <td><a href="37. HTML Entities-O768.html" target="_blank">Try it &gt; &gt; </a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&#769;</td>
+                    <td>O</td>
+                    <td>O&amp;#769;</td>
+                    <td>O&#769;</td>
+                    <td><a href="37. HTML Entities-O769.html" target="_blank">Try it &gt; &gt; </a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&#770;</td>
+                    <td>O</td>
+                    <td>O&amp;#770;</td>
+                    <td>O&#770;</td>
+                    <td><a href="37. HTML Entities-O770.html" target="_blank">Try it &gt; &gt; </a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&#771;</td>
+                    <td>O</td>
+                    <td>O&amp;#771;</td>
+                    <td>O&#771;</td>
+                    <td><a href="37. HTML Entities-O771.html" target="_blank">Try it &gt; &gt; </a></td>
+                </tr>
+            </table>
+        </p>
+
+        <br>
+
+        <a href="36. HTML Style Guide.html" title="HTML Style Guide" id="previousbutton">Previous</a>
+                
+        <a href="38. HTML Symbols.html" title="HTML Symbols" id="nextbutton">Next</a>
+
+        <br>
+        <br>
+    </body>
+</html>

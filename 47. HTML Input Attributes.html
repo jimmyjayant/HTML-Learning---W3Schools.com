@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            HTML Input Attributes 
+        </title>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
+            table {
+                width:50%;
+                border:1px solid #f1f1f1;
+                border-collapse:collapse;
+            }
+            th {
+                text-align:left;
+            }
+            tr:nth-child(even) {
+                background-color:#f1f1f1;
+            }
+            tr {
+                height:40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            HTML Input Attributes 
+        </h1>
+
+        <br>
+
+        <a href="46. HTML Input Types.html" title="HTML Input Types" id="previousbutton">Previous</a>
+                
+        <a href="48. HTML Input Form Attributes.html" title="HTML Input Form Attributes" id="nextbutton">Next</a>
+
+        <br>
+        <br>
+
+        <p>
+            This chapter describes the different attributes for the HTML <span style="color:red;background-color:#f1f1f1;">&lt;input&gt;</span> element. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The value Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">value</span> attribute specifies an initial value for an input field. 
+            <br>
+            Example:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <label for="fname">First Name:- </label>
+                <br>
+                <input type="text" id="fname" name="fname" value="John">
+                <br>
+                <label for="lname">Last Name:- </label>
+                <br>
+                <input type="text" id="lname" name="lname" value="Doe">
+                <br>
+                <input type="submit">
+            </form>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The readonly Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">readonly</span> attribute specifies that an input field is read-only. 
+            <br>
+            A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it). 
+            <br>
+            The value of a read-only input field will be sent when submitting the form! 
+            <br>
+            Example:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <label for="fname">First Name:- </label>
+                <br>
+                <input type="text" id="fname" name="fname" value="John" readonly>
+                <br>
+                <label for="lname">Last Name:- </label>
+                <br>
+                <input type="text" id="lname" name="lname" value="Doe">
+                <br>
+                <input type="submit">
+            </form>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The disabled Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">disabled</span> attribute specifies that an input field should be disabled. 
+            <br>
+            A disabled input field is unusable and un-clickable. 
+            <br>
+            The value of a disabled input field will not be sent when submitting the form! 
+            <br>
+            Example:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <label for="fname">First Name:- </label>
+                <br>
+                <input type="text" id="fname" name="fname" value="John" disabled>
+                <br>
+                <label for="lname">Last Name:- </label>
+                <br>
+                <input type="text" id="lname" name="lname" value="Doe">
+                <br>
+                <input type="submit">
+            </form>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The size Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">size</span> attribute specifies the visible width, in characters, of an input field. 
+            <br>
+            The default value for <span style="color:red;background-color:#f1f1f1;">size</span> is 20. 
+            <br>
+            <b>Note:- </b>The <span style="color:red;background-color:#f1f1f1;">size</span> attribute works with the following input types:- text, search, tel, url, email, and password. 
+            <br>
+            <p style="background-color:yellow;padding:10px;border:1px solid black;">
+            Contrary to the size attribute, you can enter as many characters as you want. 
+            </p>
+            Example:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <label for="fname">First Name:- </label>
+                <br>
+                <input type="text" id="fname" name="fname" size="50">
+                <br>
+                <label for="pin">PIN:- </label>
+                <br>
+                <input type="text" id="pin" name="pin" size="4">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The maxlength Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">maxlength</span> attribute specifies the maximum number of characters allowed in an input field. 
+            <br>
+            <b>Note:- </b>When a <span style="color:red;background-color:#f1f1f1;">maxlength</span> is set, the input field will not accept more than the specified number of characters. However, this attribute does not provide any feedback. 
+            <br>
+            So, if you want to alert the user, you must write JavaScript Code. 
+            <br>
+            Example:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <label for="fname">First Name:- </label>
+                <br>
+                <input type="text" id="fname" name="fname" size="50">
+                <br>
+                <label for="pin">PIN:- </label>
+                <br>
+                <input type="text" id="pin" name="pin" maxlength="4" size="4">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The min and max Attributes 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">min</span> and <span style="color:red;background-color:#f1f1f1;">max</span> attributes specify the minimum and maximum values for an input field. 
+            <br>
+            The <span style="color:red;background-color:#f1f1f1;">min</span> and <span style="color:red;background-color:#f1f1f1;">max</span> attributes work with the following input types:- number, range, date, datetime-local, month, time and week. 
+            <br>
+            <b>Tip:- </b>Use the max and min attributes together to create a range of legal values. 
+            <br>
+            Example:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <label for="datemax">Enter a date before 1980-01-01:- </label>
+                <input type="date" id="datemax" name="datemax" max="1979-12-31">
+                <br>
+                <br>
+                <label for="datemin">Enter a date after 2000-01-01:- </label>
+                <input type="date" id="datemin" name="datemin" min="2000-01-02">
+                <br>
+                <br>
+                <label for="quantity">Quantity (between 1 and 5):- </label>
+                <input type="number" id="quantity" name="quantity" min="1" and max="5">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The multiple Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+           The input <span style="color:red;background-color:#f1f1f1;">multiple</span> attribute specifies that the user is allowed to enter more than one value in an input field. 
+           <br>
+           The <span style="color:red;background-color:#f1f1f1;">multiple</span> attribute works with the following input types:- email, and file. 
+           <br>
+           Example:- 
+           <br>
+           <form action="https://www.w3schools.com/action_page.php" target="_blank">
+            <label for="files">Select Files:- </label>
+            <input type="file" id="files" name="files" multiple>
+            <br>
+            <br>
+            <input type="submit">
+           </form>
+           <p>
+            To select multiple files, hold down the CTRL or SHIFT key while selecting. 
+           </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The pattern Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">pattern</span> attribute specifies a regular expression that the input field's value is checked against, when the form is submitted. 
+            <br>
+            The <span style="color:red;background-color:#f1f1f1;">pattern</span> attribute works with the following input types:- text, date, search, url, tel, email, and password. 
+            <br>
+            <b>Tip:- </b>Use the global title attribute to describe the pattern to help the user. 
+            <br>
+            Example:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <label for="country_code">Country code:- </label>
+                <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+            <p>
+                The pattern attribute of the input tag is not supported in Safari 10 (or earlier). 
+            </p>
+
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The placeholder Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">placeholder</span> attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format). 
+            <br>
+            The short hint is displayed in the input field before the user enters a value. 
+            <br>
+            The <span style="color:red;background-color:#f1f1f1;">placeholder</span> attribute works with the following input types:- text, search, url, tel, email, and password. 
+            <br>
+            Example:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <label for="phone">Enter a phone number:- </label>
+                <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The required Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">required</span> attribute specifies that an input field must be filled out before submitting the form. 
+            <br>
+            The <span style="color:red;background-color:#f1f1f1;">required</span> attribute works with the following input types:- text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file. 
+            <br>
+            Example:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <label for="username">Username:- </label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The step Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">step</span> attribute specifies the legal number intervals for an input field. 
+            <br>
+            Example:- if step="3", legal numbers could be -3, 0, 3, 6, etc. 
+            <br>
+            <b>Tip:- </b>This attribute can be used together with the max and min attributes to create a range of legal values. 
+            <br>
+            The <span style="color:red;background-color:#f1f1f1;">step</span> attribute works with the following input types:- number, range, date, datetime-local, month, time and week. 
+            <br>
+            Example:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <label for="points">Points:- </label>
+                <input type="number" id="points" name="points" step="3" title="Input Value In Step of 3">
+                <input type="submit">
+            </form>
+
+            <br>
+            <br>
+
+            <p style="background-color:yellow;padding:15px;border:1px solid black;">
+            <b>Note:- </b>Input restrictions are not foolproof, and JavaScript provides many ways to add illegal input. To safely restrict input, it must also be checked by the receiver (the server)! 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The autofocus Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">autofocus</span> attribute specifies that an input field should automatically get focus when the page loads. 
+            <br>
+            Example:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <label for="fname">First Name:- </label>
+                <br>
+                <input type="text" id="fname" name="fname" autofocus>
+                <br>
+                <label for="lname">Last Name:- </label>
+                <br>
+                <input type="text" id="lname" name="lname">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The height and width Attributes 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">height</span> and <span style="color:red;background-color:#f1f1f1;">width</span> attributes specify the height and width of an <span style="color:red;background-color:#f1f1f1;">&lt;input type="image"&gt;</span> element. 
+            <br>
+            <br>
+            <p style="background-color:yellow;padding:10px;border:1px solid black;">
+            <b>Tip:- </b>Always specify both the height and width attributes for images. If height and width are set, the space required for the image is reserved when the page is loaded. Without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space to it. The effect will be that the page layout will change during loading (while the images load). 
+            </p>
+            <br>
+            <br>
+            Example:- 
+            <br>
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+             <label for="fname">First Name:- </label>
+             <input type="text" id="fname" name="fname">
+             <br>
+             <br>
+             <label for="lname">Last Name:- </label>
+             <input type="text" id="lname" name="lname">
+             <br>
+             <br>
+             <input type="image" src="Image44.gif" alt="Submit" width="48" height="48">   
+            </form>
+            <p>
+                <b>Note:- </b>The input type="image" sends the X and Y coordinates of the click that activated the image button. 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The list Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">list</span> attribute refers to a <span style="color:red;background-color:#f1f1f1;">&lt;datalist&gt;</span> element that contains pre-defined options for an &lt;input&gt; element. 
+            <br>
+            Example:- 
+            <br>
+            <form action="https://www.w3schools.com/action_page.php" target="_blank">
+                <input list="browsers" name="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                        <option value="Firefox">
+                            <option value="Chrome">
+                                <option value="Opera">
+                                    <option value="Safari">
+                </datalist>
+                <input type="submit">
+            </form>
+            <p>
+                <b>Note:- </b>The datalist tag is not supported in Safari 12.0 (or earlier). 
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The autocomplete Attribute 
+        </h2>
+
+        <br>
+
+        <p>
+            The input <span style="color:red;background-color:#f1f1f1;">autocomplete</span> attribute specifies whether a form or an input field should have autocomplete on or off. 
+            <br>
+            Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, based on earlier typed values. 
+            <br>
+            The <span style="color:red;background-color:#f1f1f1;">autocomplete</span> attribute works with <span style="color:red;background-color:#f1f1f1;">&lt;form&gt;</span> and the following <span style="color:red;background-color:#f1f1f1;">&lt;input&gt;</span> types:- text, search, url, tel, email, password, datepickers, range, and color. 
+            <br>
+            Example:- 
+            <br>
+            <p>
+                Fill in and submit the form, then reload the page to see how autocomplete works. 
+            </p>
+            <p>
+                Notice that autocomplete is "on" for the form, but "off" for the e-mail field! 
+            </p>
+            <br>
+
+
+            <form action="https://www.w3schools.com/action_page.php" target="_blank" autocomplete="on">
+                <label for="fname">First Name:- </label>
+                <input type="text" id="fname" name="fname">
+                <br>
+                <br>
+                <label for="lname">Last Name:- </label>
+                <input type="text" id="lname" name="lname">
+                <br>
+                <br>
+                <label for="email">Email:- </label>
+                <input type="email" id="email" name="email" autocomplete="off">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+
+            <br>
+
+            <b>Tip:- </b>In some browsers you may need to activate an autocomplete function for this to work (Look under "Preferences" in the browser's menu). 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Form and Input Elements 
+        </h2>
+
+        <br>
+
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>&lt;form&gt;</td>
+                <td>Defines a HTML form for user input</td>
+            </tr>
+            <tr>
+                <td>&lt;input&gt;</td>
+                <td>Defines an input control</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <a href="46. HTML Input Types.html" title="HTML Input Types" id="previousbutton">Previous</a>
+                
+        <a href="48. HTML Input Form Attributes.html" title="HTML Input Form Attributes" id="nextbutton">Next</a>
+
+        <br>
+        <br>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Div as a Container Example 4 
+        </title>
+        <style>
+         .mycontainer > div {
+            float:left;
+            width:33.33%;
+            box-sizing:border-box;
+            padding:10px;
+         }
+         .mycontainer > div:nth-child(1) {
+            background-color:yellow;
+         }
+
+         .mycontainer > div:nth-child(2) {
+            background-color:pink;
+         }
+
+         .mycontainer > div:nth-child(3) {
+            background-color:lightgreen;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="mycontainer">
+        <div>
+            <h2>
+                London 
+            </h2>
+            <p>
+                London is the capital city of England. 
+            </p>
+            <p>
+                London has over 13 million inhabitants. 
+            </p>
+         </div>
+    
+         <div>
+            <h2>
+                Oslo 
+            </h2>
+            <p>
+                Oslo is the capital city of Norway. 
+            </p>
+            <p>
+                Oslo has over 600000 inhabitants. 
+            </p>
+         </div>
+    
+         <div>
+            <h2>
+                Rome 
+            </h2>
+            <p>
+                Rome is the capital city of Italy. 
+            </p>
+            <p>
+                Rome has almost 3 million inhabitants. 
+            </p>
+         </div>
+        </div>
+    </body>
+</html>

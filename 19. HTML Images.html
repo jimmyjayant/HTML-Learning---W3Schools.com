@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-IN">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             HTML Images 
         </title>
-    </head>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
 
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
+            table, th, td {
+                border:1px solid black;
+                border-collapse:collapse;
+            }
+
+            th, td {
+                padding:10px;
+            }
+        </style>
+    </head>
     <body>
         <h1>
             HTML Images 
@@ -13,9 +52,16 @@
 
         <br>
 
+        <a href="18. HTML Links-Link Bookmarks.html" title="HTML Links-Link Bookmarks" id="previousbutton">Previous</a>
+                
+        <a href="19. HTML Images-Image Map.html" title="HTML Images-Image Map" id="nextbutton">Next</a>
+
+        <br>
+        <br>
+
         <p>
             Images can improve the design and appearance of a web page. 
-        </p>
+        
             <br>
             <br>
             Example:- 
@@ -34,7 +80,9 @@
 
             <br>
             <br>
+        </p>
 
+        
             <h2>
                 HTML Images Syntax 
             </h2>
@@ -295,11 +343,11 @@
 
             <br>
 
-            <table border="3">
+            <table>
             <tr>
-                <td>Abbreviation</td>
-                <td>File Format</td>
-                <td>File Extension</td>
+                <th>Abbreviation</th>
+                <th>File Format</th>
+                <th>File Extension</th>
             </tr>
             <tr>
                 <td>APNG</td>
@@ -359,6 +407,13 @@
             <b>Note:- </b>Loading large images take time, and can slow down your web page. Use images carefully. 
             </p>
 
+            <br>
 
+            <a href="18. HTML Links-Link Bookmarks.html" title="HTML Links-Link Bookmarks" id="previousbutton">Previous</a>
+                    
+            <a href="19. HTML Images-Image Map.html" title="HTML Images-Image Map" id="nextbutton">Next</a>
+
+            <br>
+            <br>
     </body>
 </html>

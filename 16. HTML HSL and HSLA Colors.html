@@ -1,152 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-IN">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             HTML HSL and HSLA Colors 
         </title>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+        </style>
     </head>
 
     <body>
-    <h1>
-        HTML HSL and HSLA Colors 
-    </h1>
+        <h1>
+            HTML HSL and HSLA Colors 
+        </h1>
 
-    <p>
-        HSL stands for Hue, Saturation, and Lightness. 
         <br>
-        HSLA color values are an extension of HSL with an Alpha channel (opacity). 
 
-    </p>
+        <a href="15. HTML Hex Colors.html" title="HTML Hex Colors" id="previousbutton">Previous</a>
+                
+        <a href="17. HTML CSS.html" title="HTML CSS" id="nextbutton">Next</a>
 
-    <br>
-    <br>
-
-    <h2>
-        HSL Color Values 
-    </h2>
-
-    <br>
-
-    <p>
-        In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:- 
         <br>
-        <b><i>hsl(hue, saturation, lightness)</i></b>
         <br>
-        Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue. 
-        <br>
-        Saturation is a percentage value. 0% means a shade of gray, 100% is the full color. 
-        <br>
-        Lightness is also a percentage value. 0% is black, and 100% is white. 
-        <br>
-        Example:- 
-        <br>
-        <h1 style="background-color:hsl(0,100%,50%);">hsl(0,100%,50%)</h1>
-        <h1 style="background-color:hsl(240,100%,50%);">hsl(240,100%,50%)</h1>
-        <h1 style="background-color:hsl(147,50%,47%);">hsl(147,50%,47%)</h1>
-        <h1 style="background-color:hsl(300,76%,72%);">hsl(300,76%,72%)</h1>
-        <h1 style="background-color:hsl(39,100%,50%);">hsl(39,100%,50%)</h1>
-        <h1 style="background-color:hsl(248,53%,58%);">hsl(248,53%,58%)</h1>
-    </p>
 
-    <br>
-    <br>
+        <p>
+            HSL stands for Hue, Saturation, and Lightness. 
+            <br>
+            HSLA color values are an extension of HSL with an Alpha channel (opacity). 
 
-    <h2>
-        Saturation 
-    </h2>
+        </p>
 
-    <br>
-
-    <p>
-        Saturation can be described as the intensity of the color. 
         <br>
-        100% is pure color, no shades of gray. 
         <br>
-        50% is 50% gray, but you can still see the color. 
+
+        <h2>
+            HSL Color Values 
+        </h2>
+
         <br>
-        0% is complete gray, and you can no longer see the color. 
+
+        <p>
+            In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:- 
+            <br>
+            <b><i>hsl(hue, saturation, lightness)</i></b>
+            <br>
+            Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue. 
+            <br>
+            Saturation is a percentage value. 0% means a shade of gray, 100% is the full color. 
+            <br>
+            Lightness is also a percentage value. 0% is black, and 100% is white. 
+            <br>
+            Example:- 
+            <br>
+            <h1 style="background-color:hsl(0,100%,50%);">hsl(0,100%,50%)</h1>
+            <h1 style="background-color:hsl(240,100%,50%);">hsl(240,100%,50%)</h1>
+            <h1 style="background-color:hsl(147,50%,47%);">hsl(147,50%,47%)</h1>
+            <h1 style="background-color:hsl(300,76%,72%);">hsl(300,76%,72%)</h1>
+            <h1 style="background-color:hsl(39,100%,50%);">hsl(39,100%,50%)</h1>
+            <h1 style="background-color:hsl(248,53%,58%);">hsl(248,53%,58%)</h1>
+        </p>
+
         <br>
-        Example:- 
         <br>
-        <h1 style="background-color:hsl(0,100%,50%);">hsl(0,100%,50%)</h1>
-        <h1 style="background-color:hsl(0,80%,50%);">hsl(0,80%,50%)</h1>
-        <h1 style="background-color:hsl(0,60%,50%);">hsl(0,60%,50%)</h1>
-        <h1 style="background-color:hsl(0,40%,50%);">hsl(0,40%,50%)</h1>
-        <h1 style="background-color:hsl(0,20%,50%);">hsl(0,20%,50%)</h1>
-        <h1 style="background-color:hsl(0,0%,50%);">hsl(0,0%,50%)</h1>
-    </p>
 
-    <br>
-    <br>
+        <h2>
+            Saturation 
+        </h2>
 
-    <h2>
-        Lightness 
-    </h2>
-
-    <br>
-
-    <p>
-        The Lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light), and 100% means full lightness (white). 
         <br>
-        Example:-
+
+        <p>
+            Saturation can be described as the intensity of the color. 
+            <br>
+            100% is pure color, no shades of gray. 
+            <br>
+            50% is 50% gray, but you can still see the color. 
+            <br>
+            0% is complete gray, and you can no longer see the color. 
+            <br>
+            Example:- 
+            <br>
+            <h1 style="background-color:hsl(0,100%,50%);">hsl(0,100%,50%)</h1>
+            <h1 style="background-color:hsl(0,80%,50%);">hsl(0,80%,50%)</h1>
+            <h1 style="background-color:hsl(0,60%,50%);">hsl(0,60%,50%)</h1>
+            <h1 style="background-color:hsl(0,40%,50%);">hsl(0,40%,50%)</h1>
+            <h1 style="background-color:hsl(0,20%,50%);">hsl(0,20%,50%)</h1>
+            <h1 style="background-color:hsl(0,0%,50%);">hsl(0,0%,50%)</h1>
+        </p>
+
         <br>
-        <h1 style="background-color:hsl(0,100%,0%);">hsl(0,100%,0%)</h1>
-        <h1 style="background-color:hsl(0,100%,25%);">hsl(0,100%,25%)</h1>
-        <h1 style="background-color:hsl(0,100%,50%);">hsl(0,100%,50%)</h1>
-        <h1 style="background-color:hsl(0,100%,75%);">hsl(0,100%,75%)</h1>
-        <h1 style="background-color:hsl(0,100%,90%);">hsl(0,100%,90%)</h1>
-        <h1 style="background-color:hsl(0,100%,100%);">hsl(0,100%,100%)</h1>
-    </p>
-
-    <br>
-    <br>
-
-    <h2>
-        Shades of Gray 
-    </h2>
-
-    <br>
-
-    <p>
-        Shades of Gray are often defined by setting the hue and saturation to 0, and adjusting the lightness from 0% to 100% to get lighter/darker shades. 
         <br>
-        Example:- 
-        <br>
-        <h1 style="background-color:hsl(0,0%,20%);">hsl(0,0%,20%)</h1>
-        <h1 style="background-color:hsl(0,0%,30%);">hsl(0,0%,30%)</h1>
-        <h1 style="background-color:hsl(0,0%,40%);">hsl(0,0%,40%)</h1>
-        <h1 style="background-color:hsl(0,0%,60%);">hsl(0,0%,60%)</h1>
-        <h1 style="background-color:hsl(0,0%,70%);">hsl(0,0%,70%)</h1>
-        <h1 style="background-color:hsl(0,0%,90%);">hsl(0,0%,90%)</h1>
-    </p>
 
-    <br>
-    <br>
+        <h2>
+            Lightness 
+        </h2>
 
-    <h2>
-        HSLA Color Values 
-    </h2>
+        <br>
 
-    <br>
+        <p>
+            The Lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light), and 100% means full lightness (white). 
+            <br>
+            Example:-
+            <br>
+            <h1 style="background-color:hsl(0,100%,0%);">hsl(0,100%,0%)</h1>
+            <h1 style="background-color:hsl(0,100%,25%);">hsl(0,100%,25%)</h1>
+            <h1 style="background-color:hsl(0,100%,50%);">hsl(0,100%,50%)</h1>
+            <h1 style="background-color:hsl(0,100%,75%);">hsl(0,100%,75%)</h1>
+            <h1 style="background-color:hsl(0,100%,90%);">hsl(0,100%,90%)</h1>
+            <h1 style="background-color:hsl(0,100%,100%);">hsl(0,100%,100%)</h1>
+        </p>
 
-    <p>
-        HSLA Color values are an extension of HSL Color values, with an Alpha channel - which specifies the opacity for a color. 
         <br>
-        An HSLA color value is specified with:- 
         <br>
-        <b><i>hsla(hue, saturation, lightness, alpha)</i></b>
-        <br>
-        The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all). 
-        <br>
-        Example:- 
-        <br>
-        <h1 style="background-color:hsla(9,100%,64%,0);">hsla(9,100%,64%,0)</h1>
-        <h1 style="background-color:hsla(9,100%,64%,0.2);">hsla(9,100%,64%,0.2)</h1>
-        <h1 style="background-color:hsla(9,100%,64%,0.4);">hsla(9,100%,64%,0.4)</h1>
-        <h1 style="background-color:hsla(9,100%,64%,0.6);">hsla(9,100%,64%,0.6)</h1>
-        <h1 style="background-color:hsla(9,100%,64%,0.8);">hsla(9,100%,64%,0.8)</h1>
-        <h1 style="background-color:hsla(9,100%,64%,1);">hsla(9,100%,64%,1)</h1>
-    </p>
 
+        <h2>
+            Shades of Gray 
+        </h2>
+
+        <br>
+
+        <p>
+            Shades of Gray are often defined by setting the hue and saturation to 0, and adjusting the lightness from 0% to 100% to get lighter/darker shades. 
+            <br>
+            Example:- 
+            <br>
+            <h1 style="background-color:hsl(0,0%,20%);">hsl(0,0%,20%)</h1>
+            <h1 style="background-color:hsl(0,0%,30%);">hsl(0,0%,30%)</h1>
+            <h1 style="background-color:hsl(0,0%,40%);">hsl(0,0%,40%)</h1>
+            <h1 style="background-color:hsl(0,0%,60%);">hsl(0,0%,60%)</h1>
+            <h1 style="background-color:hsl(0,0%,70%);">hsl(0,0%,70%)</h1>
+            <h1 style="background-color:hsl(0,0%,90%);">hsl(0,0%,90%)</h1>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HSLA Color Values 
+        </h2>
+
+        <br>
+
+        <p>
+            HSLA Color values are an extension of HSL Color values, with an Alpha channel - which specifies the opacity for a color. 
+            <br>
+            An HSLA color value is specified with:- 
+            <br>
+            <b><i>hsla(hue, saturation, lightness, alpha)</i></b>
+            <br>
+            The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all). 
+            <br>
+            Example:- 
+            <br>
+            <h1 style="background-color:hsla(9,100%,64%,0);">hsla(9,100%,64%,0)</h1>
+            <h1 style="background-color:hsla(9,100%,64%,0.2);">hsla(9,100%,64%,0.2)</h1>
+            <h1 style="background-color:hsla(9,100%,64%,0.4);">hsla(9,100%,64%,0.4)</h1>
+            <h1 style="background-color:hsla(9,100%,64%,0.6);">hsla(9,100%,64%,0.6)</h1>
+            <h1 style="background-color:hsla(9,100%,64%,0.8);">hsla(9,100%,64%,0.8)</h1>
+            <h1 style="background-color:hsla(9,100%,64%,1);">hsla(9,100%,64%,1)</h1>
+        </p>
+
+        <br>
+        <br>
+
+        <a href="15. HTML Hex Colors.html" title="HTML Hex Colors" id="previousbutton">Previous</a>
+                
+        <a href="17. HTML CSS.html" title="HTML CSS" id="nextbutton">Next</a>
+
+        <br>
+        <br>
     </body>
 </html>

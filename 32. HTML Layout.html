@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            HTML Layout
+        </title>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
+            a {
+                color:black;
+            }
+            a:hover {
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            HTML Layout Elements and Techniques 
+        </h1>
+
+        <br>
+
+        <a href="31. HTML Head.html" title="HTML Head" id="previousbutton">Previous</a>
+                
+        <a href="33. HTML Responsive.html" title="HTML Responsive" id="nextbutton">Next</a>
+
+        <br>
+        <br>
+
+        <p>
+            Websites often display content in multiple columns (like a magazine or a newspaper). 
+            <br>
+            Example:- 
+            <br>
+            <a href="32. HTML Layout-CSS Layout Float.html" target="_blank">CSS Layout Float</a>
+             
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Layout Elements 
+        </h2>
+
+        <br>
+
+        <p>
+            HTML has several semantic elements that define the different parts of a webpage:- 
+            <br>
+            <table>
+                <tr>
+                    <td><img src="Image39.png" height="258" width="219" alt="Semantic Elements"></td>
+                    <td>
+                        <ul>
+                            <li><span style="color:red;">&lt;header&gt;</span> - Defines a header for a document or a section</li>
+                            <li><span style="color:red;">&lt;nav&gt;</span> - Defines a set of navigation links</li>
+                            <li><span style="color:red;">&lt;section&gt;</span> - Defines a section in a document</li>
+                            <li><span style="color:red;">&lt;article&gt;</span> - Defines an independent, self-contained content</li>
+                            <li><span style="color:red;">&lt;aside&gt;</span> - Defines content aside from the content (like a sidebar)</li>
+                            <li><span style="color:red;">&lt;footer&gt;</span> - Defines a footer for a document for a section</li>
+                            <li><span style="color:red;">&lt;details&gt;</span> - Defines additional details that the user can open and close on demand</li>
+                            <li><span style="color:red;">&lt;summary&gt;</span> - Defines a heading for the <span style="color:red;">&lt;details&gt;</span> element</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            
+            
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            HTML Layout Techniques 
+        </h2>
+
+        <br>
+
+        <p>
+            There are four different techniques to create multicolumn layouts. Each technique has its pros and cons:- 
+            <br>
+            <ul>
+                <li>CSS framework</li>
+                <li>CSS float property</li>
+                <li>CSS flexbox</li>
+                <li>CSS grid</li>
+            </ul>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            CSS Frameworks 
+        </h2>
+
+        <br>
+
+        <p>
+            If you want to create your layout fast, you can use a CSS framework, like <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a> or <a href="https://www.w3schools.com/bootstrap/default.asp" target="_blank">Bootstrap</a>. 
+        </p>
+        
+        <br>
+        <br>
+
+        <h2>
+            CSS Float Layout 
+        </h2>
+
+        <br>
+
+        <p>
+            It is common to do entire web layouts using the CSS <span style="color:red;">float</span> property. Float is easy to learn - you just need to remember how the <span style="color:red;">float</span> and <span style="color:red;">clear</span> properties work. 
+            <br>
+            <b>Disadvantages:- </b>Floating elements are tied to the document flow, which may harm the flexibility. 
+            <br>
+            Example:- 
+            <br>
+            <a href="32. HTML Layout-CSS Layout Float.html" target="_blank">CSS Layout Float</a>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            CSS Flexbox Layout 
+        </h2>
+
+        <br>
+
+        <p>
+            Use of flexbox ensures that elements behave predictably when the page layout must accomodate different screen sizes and different display devices. 
+            <br>
+            Example:- 
+            <br>
+            <a href="32. HTML Layout-Flexbox.html" target="_blank">CSS Flexbox Layout</a>
+        </p>
+        
+        <br>
+        <br>
+
+        <h2>
+            CSS Grid Layout 
+        </h2>
+
+        <br>
+
+        <p>
+            The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning. 
+        </p>
+
+        <br>
+
+        <a href="31. HTML Head.html" title="HTML Head" id="previousbutton">Previous</a>
+                
+        <a href="33. HTML Responsive.html" title="HTML Responsive" id="nextbutton">Next</a>
+
+        <br>
+        <br>
+    </body>
+</html>

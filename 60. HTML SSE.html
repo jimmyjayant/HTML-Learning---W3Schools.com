@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            HTML SSE 
+        </title>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
+            #table1 {
+                border:1px solid grey;
+                width:100%;
+                border-collapse:collapse;
+            }
+            #table1 tr {
+                height:40px;
+            }
+            #table1 tr:nth-child(even) {
+                background-color:#d3d3d3;
+            }
+            #table1 th {
+                text-align:left;
+                border:1px solid grey;
+            }
+            #table1 td {
+                text-align:center;
+                border:1px solid grey;
+            }
+
+            #table2 {
+                border:1px solid grey;
+                width:100%;
+                border-collapse:collapse;
+            }
+            #table2 tr {
+                height:40px;
+            }
+            #table2 tr:nth-child(even) {
+                background-color:#d3d3d3;
+            }
+            #table2 th {
+                text-align:left;
+                
+            }
+            #table2 td {
+                text-align:left;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            HTML SSE API 
+        </h1>
+
+        <br>
+
+        <a href="59. HTML Web Workers.html" title="HTML Web Workers" id="previousbutton">Previous</a>
+                
+        <a href="1. HTML Home.html" title="HTML Home" id="nextbutton">Jump to First Tutorial</a>
+
+        <br>
+        <br>
+
+        <p>
+            Server-Sent Events (SSE) allow a web page to get updates from a server. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Server-Sent Events - One Way Messaging 
+        </h2>
+
+        <br>
+
+        <p>
+            A server-sent event is when a web page automatically gets updates from a server. 
+            <br>
+            This was also possible before, but the web page would have to ask if any updates were available. With server-sent events, the updates come automatically. 
+            <br>
+            Examples:- Facebook/Twitter updates, stock price updates, news feeds, sport results, etc. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Browser Support 
+        </h2>
+
+        <br>
+
+        <p>
+            The numbers in the table specify the first browser version that fully support server-sent events. 
+
+            <br>
+
+            <table id="table1">
+                <tr>
+                    <th>API</th>
+                    <td><img src="Image45.svg.png" height="35" width="35" alt=""></td>
+                    <td><img src="Image46.png" height="35" width="35" alt=""></td>
+                    <td><img src="Image47.png" height="35" width="35" alt=""></td>
+                    <td><img src="Image48.png" height="35" width="35" alt=""></td>
+                    <td><img src="Image49.png" height="35" width="35" alt=""></td>
+                </tr>
+                <tr>
+                    <th>SSE</th>
+                    <td>6.0</td>
+                    <td>79.0</td>
+                    <td>6.0</td>
+                    <td>5.0</td>
+                    <td>11.5</td>
+                </tr>
+            </table>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Receive Server-Sent Event Notifications 
+        </h2>
+
+        <br>
+
+        <p>
+            The EventSource object is used to receive server-sent event notifications:- 
+            <br>
+            <h1>
+                Getting server updates 
+            </h1>
+
+            <div id="result"></div>
+
+            <br>
+            <br>
+
+            Example explained:- 
+            <br>
+            <ul>
+                <li>Create a new EventSource object, and specify the URL of the page sending the updates (in this example "demo_sse.php")</li>
+                <li>Each time an update is received, the onmessage event occurs</li>
+                <li>When an onmessage event occurs, put the received data into the element with id="result"</li>
+            </ul>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Check Server-Sent Events Support 
+        </h2>
+
+        <br>
+
+        <p>
+            In the tryit example above there were some extra lines of code to check browser support for server-sent events. 
+            <br>
+            <p style="border:1px solid grey;padding:10px;">
+            <span style="color:blue;">if</span> (<span style="color:blue;">typeof</span>(EventSource)!==<span style="color:brown;">"undefined"</span>)
+            <br>
+            {
+                <br>
+                <span style="color:green;">// Yes! Server-sent events support! </span>
+                <br>
+                <span style="color:green;">// <i>Some code.............</i></span>
+                <br>
+            }
+            <br>
+            <span style="color:blue;">else</span>
+            <br>
+            {
+                <br>
+                <span style="color:green;">// Sorry! No server-sent events support...</span>
+                <br>
+            }
+            </p>
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            Server-Side Code Example 
+        </h2>
+
+        <br>
+
+        <p>
+            For the example above to work, you need a server capable of sending data updates (like PHP or ASP). 
+            <br>
+            The server-side event stream syntax is simple. Set the "Content-Type" header to "text/event-stream". Now you can start sending event streams. 
+            <br>
+            Code in PHP (demo_sse.php):- 
+            <br>
+            <p style="border:1px solid grey;padding:10px;">
+            <span style="color:red;">&lt;?php</span>
+            <br>
+            header(<span style="color:brown;">'Content-Type: text/event-stream'</span>);
+            <br>
+            header(<span style="color:brown;">'Cache-Control: no-cache'</span>);
+            <br>
+            <br>
+            $time = date(<span style="color:brown;">'r'</span>);
+            <br>
+            <span style="color:blue;">echo </span><span style="color:brown;">"data: The server time is: {$time}\n\n"</span>;
+            <br>
+            flush();
+            <br>
+            <span style="color:red;">?&gt;</span>
+            </p>
+
+            <br>
+            <br>
+
+            Code in ASP (VB) (demo_sse.asp):-
+            
+            <br>
+
+            <p style="border:1px solid grey;padding:10px;color:brown;">
+            &lt;%
+            <br>
+            Response.ContentType = "text/event-stream"
+            <br>
+            Response.Expires = -1
+            <br>
+            Response.Write("data: The server time is: " & now())
+            <br>
+            Response.Flush()
+            <br>
+            %&gt; 
+            </p>
+
+            <br>
+            <br>
+
+            Code explained:- 
+            <br>
+            <ul>
+                <li>Set the "Content-Type" header to "text/event-stream"</li>
+                <li>Specify that the page should not cache</li>
+                <li>Output the data to send (<b>Always</b> start with "data: ")</li>
+                <li>Flush the output data back to the web page</li>
+            </ul>
+
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The EventSource Object 
+        </h2>
+
+        <br>
+
+        <p>
+            In the examples above we used the onmessage event to get messages. But other events are also available:- 
+            <br>
+            <table id="table2">
+                <tr>
+                    <th>Events</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>onopen</td>
+                    <td>When a connection to the server is opened</td>
+                </tr>
+                <tr>
+                    <td>onmessage</td>
+                    <td>When a message is received</td>
+                </tr>
+                <tr>
+                    <td>onerror</td>
+                    <td>When an error occurs</td>
+                </tr>
+            </table>
+        </p>
+
+        <br>
+
+        <a href="59. HTML Web Workers.html" title="HTML Web Workers" id="previousbutton">Previous</a>
+                
+        <a href="1. HTML Home.html" title="HTML Home" id="nextbutton">Jump to First Tutorial</a>
+
+        <br>
+        <br>
+
+    <script>
+        if(typeof(EventSource)!=="undefined")
+        {
+            var source = new EventSource("demo_sse.php");
+            source.onmessage = function(event)
+            {
+                document.getElementById("result").innerHTML += event.data + "<br>";
+            };
+        }
+        else
+        {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events.........";
+        }
+    </script>
+    </body>
+</html>

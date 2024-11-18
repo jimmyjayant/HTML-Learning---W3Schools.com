@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-IN">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             HTML Links 
         </title>
-    </head>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
 
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
+            table, td, th {
+                border:1px solid black;
+                border-collapse:collapse;
+            }
+
+            td, th {
+                padding:10px;
+            }
+        </style>
+    </head>
     <body>
         <h1>
             HTML Links 
         </h1>
 
+        <br>
+
+        <a href="17. HTML CSS.html" title="HTML CSS" id="previousbutton">Previous</a>
+                
+        <a href="18. HTML Links-Different Colors.html" title="HTML Links-Different Colors" id="nextbutton">Next</a>
+
+        <br>
         <br>
 
         <p>
@@ -122,6 +168,29 @@
 
         <br>
         <br>
+
+        <h2>
+            Download Using Link 
+        </h2>
+
+        <br>
+
+        <p>
+            You can add the download attribute in the anchor tag. If you want the image to be downloaded rather than open in the browser. 
+            <br>
+            Example:- 
+            <br>
+            <a href="Image53.gif" title="Download Image" download="Image53.gif">
+                <button type="button">Download</button>
+            </a>
+            <br>
+            <br>
+            <p style="background-color:red;color:white;">
+                Please use the xampp or open the webpage on a server to see the above in action. 
+                <br>
+                Else, the image will not download but open in the browser. 
+            </p>
+        </p>
 
         <h2>
             Absolute URLs vs. Relative URLs 
@@ -288,17 +357,24 @@
         <br>
         <br>
 
-        <table border="2">
+        <table>
             <tr>
-                <td><b>Tag</b></td>
-                <td><b>Description</b></td>
+                <th>Tag</th>
+                <th>Description</th>
             </tr>
             <tr>
                 <td>&lt;a&gt;</td>
                 <td>Defines a hyperlink</td>
             </tr>
-        
         </table>
 
+        <br>
+
+        <a href="17. HTML CSS.html" title="HTML CSS" id="previousbutton">Previous</a>
+                
+        <a href="18. HTML Links-Different Colors.html" title="HTML Links-Different Colors" id="nextbutton">Next</a>
+
+        <br>
+        <br>
     </body>
 </html>

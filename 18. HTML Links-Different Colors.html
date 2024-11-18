@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-IN">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             HTML Links-Different Colors 
         </title>
-    </head>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
 
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
+            table, td, th {
+                border:1px solid black;
+                border-collapse:collapse;
+            }
+
+            td, th {
+                padding:10px;
+            }
+        </style>
+    </head>
     <body>
         <h1>
             HTML Links - Different Colors 
         </h1>
 
+        <br>
+
+        <a href="18. HTML Links.html" title="HTML Links" id="previousbutton">Previous</a>
+                
+        <a href="18. HTML Links-Link Bookmarks.html" title="HTML Links-Link Bookmarks" id="nextbutton">Next</a>
+
+        <br>
         <br>
 
         <p>
@@ -76,7 +122,7 @@
 
         <br>
 
-        <table border="3">
+        <table>
             <tr>
                 <td><b>Tag</b></td>
                 <td><b>Description</b></td>
@@ -86,5 +132,14 @@
                 <td>Defines a Hyperlink</td>
             </tr>
         </table>
+
+        <br>
+
+        <a href="18. HTML Links.html" title="HTML Links" id="previousbutton">Previous</a>
+                
+        <a href="18. HTML Links-Link Bookmarks.html" title="HTML Links-Link Bookmarks" id="nextbutton">Next</a>
+
+        <br>
+        <br>
     </body>
 </html>

@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-IN">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             HTML Image Map 
         </title>
-    </head>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
 
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
+            table, th, td {
+                border:1px solid black;
+                border-collapse:collapse;
+            }
+
+            th, td {
+                padding:10px;
+            }
+        </style>
+    </head>
     <body>
         <h1>
             HTML Image Maps 
         </h1>
 
+        <br>
+
+        <a href="19. HTML Images.html" title="HTML Images" id="previousbutton">Previous</a>
+                
+        <a href="19. HTML Images-Background Images.html" title="HTML Images-Background Images" id="nextbutton">Next</a>
+
+        <br>
         <br>
 
         <p>
@@ -336,10 +382,10 @@
 
         <br>
 
-        <table border="3">
+        <table>
             <tr>
-                <td><b>Tag</b></td>
-                <td><b>Description</b></td>
+                <th>Tag</th>
+                <th>Description</th>
             </tr>
             <tr>
                 <td>&lt;img&gt;</td>
@@ -359,12 +405,21 @@
             </tr>
 
         </table>
+
+        <br>
+
+        <a href="19. HTML Images.html" title="HTML Images" id="previousbutton">Previous</a>
+                
+        <a href="19. HTML Images-Background Images.html" title="HTML Images-Background Images" id="nextbutton">Next</a>
+
+        <br>
+        <br>
+
         <script>
             function myFunction()
             {
                 alert("You clicked a cup of coffee!");
             }
         </script>
-
     </body>
 </html>

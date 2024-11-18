@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-IN">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             HTML Favicon 
         </title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
             a:link {
                 color:black;
             }
@@ -14,20 +44,27 @@
                 color:green;
             }
 
-            table,tr {
+            table,td,th {
                 border:2px solid black;
+                border-collapse:collapse;
             }
             td {
                 padding:15px 25px;
             }
         </style>
     </head>
-
     <body>
         <h1>
             HTML Favicon 
         </h1>
 
+        <br>
+
+        <a href="19. HTML Images-The Picture Element.html" title="HTML Images-The Picture Element" id="previousbutton">Previous</a>
+                
+        <a href="21. HTML Page Title.html" title="HTML Page Title" id="nextbutton">Next</a>
+
+        <br>
         <br>
 
         <p>
@@ -64,7 +101,7 @@
         <br>
         <br>
 
-        To add a favicon to your website, either save your favicon image to the root directory of your webserver, or create a folder in the root directory called images, and save your favicon image in this folder. A common name for a favicon image is "favicon.ico". 
+        To add a favicon to your website, either save your favicon image to the root directory of your web server, or create a folder in the root directory called images, and save your favicon image in this folder. A common name for a favicon image is "favicon.ico". 
         <br>
         Next, add a &lt;link&gt; element to your "index.html" file, after the &lt;title&gt; element like this:- 
 
@@ -106,12 +143,12 @@
                 <th>SVG</th>
             </tr>
             <tr>
-            <td>Edge</td>
-            <td>Yes</td>
-            <td>Yes</td>
-            <td>Yes</td>
-            <td>Yes</td>
-            <td>Yes</td>
+                <td>Edge</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
             </tr>
             <tr>
                 <td>Chrome</td>
@@ -121,30 +158,30 @@
                 <td>Yes</td>
                 <td>Yes</td>
             </tr>
-                <tr>
-                    <td>Firefox</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                </tr>
-                    <tr>
-                        <td>Opera</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
-                        <td>Yes</td>
-                    </tr>
-                        <tr>
-                            <td>Safari</td>
-                            <td>Yes</td>
-                            <td>Yes</td>
-                            <td>Yes</td>
-                            <td>Yes</td>
-                            <td>Yes</td>
-                        </tr>
+            <tr>
+                <td>Firefox</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Opera</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
         </table>
 
         <br>
@@ -179,5 +216,14 @@
                 <td>Defines a relationship between a document and an external resource</td>
             </tr>
         </table>
+
+        <br>
+
+        <a href="19. HTML Images-The Picture Element.html" title="HTML Images-The Picture Element" id="previousbutton">Previous</a>
+                
+        <a href="21. HTML Page Title.html" title="HTML Page Title" id="nextbutton">Next</a>
+
+        <br>
+        <br>
     </body>
 </html>

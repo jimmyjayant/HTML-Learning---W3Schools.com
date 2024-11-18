@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-IN">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             HTML HOME
         </title>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+        </style>
     </head>
 
     <body>
         <h1>
             HTML HOME
         </h1>
+
+        <a href="60. HTML SSE.html" title="HTML SSE" id="previousbutton">Jump to Last Tutorial</a>
+        
+        <a href="2. HTML Introduction.html" title="HTML Introduction" id="nextbutton">Next</a>
+
+        <br>
+        <br>
 
         <p>
             HTML is the standard markup language for Web pages.

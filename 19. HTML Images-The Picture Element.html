@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-IN">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             The Picture Element 
         </title>
-    </head>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
 
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
+            table, th, td {
+                border:1px solid black;
+                border-collapse:collapse;
+            }
+
+            th, td {
+                padding:10px;
+            }
+        </style>
+    </head>
     <body>
         <h1>
             HTML &lt;picture&gt; Element 
         </h1>
 
+        <br>
+
+        <a href="19. HTML Images-Background Images.html" title="HTML Images-Background Images" id="previousbutton">Previous</a>
+                
+        <a href="20. HTML Favicon.html" title="HTML Favicon" id="nextbutton">Next</a>
+
+        <br>
         <br>
 
         <p>
@@ -32,7 +78,7 @@
         <p>
             The HTML &lt;picture&gt; element gives web developers more flexibility in specifying image resources. 
             <br>
-            The &lt;picture&gt; element contains one or more &lt;source&gt; elements, each referring to different images throught the srcset attribute. 
+            The &lt;picture&gt; element contains one or more &lt;source&gt; elements, each referring to different images through the srcset attribute. 
             <br>
             This way the browser can choose the image that best fits the current view and/or device. 
 
@@ -124,7 +170,7 @@
 
         <br>
 
-        <table style="border:2px solid black;">
+        <table>
         <tr style="text-align:left;">
             <th>Tag</th>
             <th>Description</th>
@@ -147,5 +193,13 @@
         </tr>
         </table>
 
+        <br>
+
+        <a href="19. HTML Images-Background Images.html" title="HTML Images-Background Images" id="previousbutton">Previous</a>
+                
+        <a href="20. HTML Favicon.html" title="HTML Favicon" id="nextbutton">Next</a>
+
+        <br>
+        <br>
     </body>
 </html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            HTML Div 
+        </title>
+        <style>
+            #nextbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                right:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #previousbutton {
+                display:block;
+                position:absolute;
+                padding:5px 15px;
+                color:white;
+                text-decoration:none;
+                background-color:lightgreen;
+                left:5px;
+                border-radius:5px;
+                margin:10px 15px;
+            }
+
+            #nextbutton:hover, #previousbutton:hover {
+                background-color:green;
+            }
+
+            table, th, td {
+                border:2px solid black;
+                border-collapse:collapse;
+            }
+
+            th, td {
+                padding:10px;
+                text-align:left;
+            }
+
+            #sidebyside {
+                content:'';
+                display:table;
+                clear:both;
+            }
+
+            #sidebyside div {
+                float:left;
+                width:33.33%;
+                height:300px;
+                box-sizing:border-box;
+                padding:10px;
+            }
+
+            #sidebyside > div:nth-child(1) {
+                background-color:yellow;
+            }
+
+            #sidebyside > div:nth-child(2) {
+                background-color:pink;
+            }
+
+            #sidebyside > div:nth-child(3) {
+                background-color:lightgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            HTML Div Element  
+        </h1>
+
+        <br>
+
+        <a href="24. HTML Block and Inline.html" title="HTML Block and Inline" id="previousbutton">Previous</a>
+                
+        <a href="26. HTML Classes.html" title="HTML Classes" id="nextbutton">Next</a>
+
+        <br>
+        <br>
+
+        <p>
+            The <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> element is used as a container for other HTML elements. 
+        </p>
+
+        <br>
+        <br>
+
+        <h2>
+            The &lt;div&gt; Element 
+        </h2>
+
+        <br>
+
+        <div>
+            The <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after. 
+
+            <br>
+            <br>
+            <h3>
+                Example:- 
+            </h3>
+
+            <br>
+
+            <p>
+                A &lt;div&gt; element takes up all available width: 
+                <br>
+                <p>
+                    Lorem Ipsum &lt;div&gt; I am a div&lt;/div&gt; dolor sit amet. 
+                </p>
+
+                <br>
+                <br>
+
+                <h3>
+                    Result:- 
+                </h3>
+
+                <p>
+                    Lorem Ipsum
+                    <br>
+                    <p style="background-color:yellow;">
+                        I am a div 
+                    </p>
+                    dolor sit amet. 
+                </p>
+
+                The <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> element has no required attributes, but <span style="background-color:#f1f1f1;color:red;">style</span>, <span style="background-color:#f1f1f1;color:red;">class</span> and <span style="background-color:#f1f1f1;color:red;">id</span> are common. 
+            </p>
+        </div>
+
+        <br>
+        <br>
+
+        <h2>
+            &lt;div&gt; as a container 
+        </h2>
+
+        <div>
+            The <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> element is often used to group sections of a web page together. 
+            <br>
+            <h3>
+                Example:- 
+            </h3>
+
+            <p>
+                A &lt;div&gt; element with HTML elements:- 
+                <br>
+                <a href="25. HTML Div-Example 1.html" title="div as a container example" target="_blank">Div Example 1</a>
+            </p>
+        </div>
+
+        <br>
+        <br>
+
+        <hr>
+
+        <br>
+        <br>
+
+        <h2>
+            Center align a &lt;div&gt; element 
+        </h2>
+
+        <div>
+            If you have a <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> element that is not 100% wide, and you want to center-align it, set the CSS <span style="background-color:#f1f1f1;color:red;">margin</span> property to <span style="background-color:#f1f1f1;color:red;">auto</span>. 
+            <br>
+            <b>Example:- </b>
+            <br>
+            <a href="25. HTML Div-Example 2.html" target="_blank">Div Example 2</a>
+        </div>
+
+        <br>
+        <br>
+
+        <hr>
+
+        <br>
+        
+        <h2>
+            Multiple &lt;div&gt; elements 
+        </h2>
+
+        <div>
+            You can have many <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> containers on the same page. 
+
+            <br>
+            <b>Example:-</b> 
+            <br>
+            <a href="25. HTML Div-Example 3.html" title="Multiple div elements example" target="_blank">Div Example 3</a>
+        </div>
+
+        <br>
+        <br>
+
+        <hr>
+
+        <br>
+
+        <h2>
+            Aligning &lt;div&gt; elements side by side 
+        </h2>
+
+        <div>
+            When building web pages, you often want to have two or more <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> elements side by side, like this: 
+            <br>
+            <div id="sidebyside">
+                <div>
+                    <h2>
+                        London 
+                    </h2>
+                    <p>
+                        London is the capital city of England. 
+                    </p>
+                    <p>
+                        London has over 13 million inhabitants. 
+                    </p>
+                 </div>
+            
+                 <div>
+                    <h2>
+                        Oslo 
+                    </h2>
+                    <p>
+                        Oslo is the capital city of Norway. 
+                    </p>
+                    <p>
+                        Oslo has over 600000 inhabitants. 
+                    </p>
+                 </div>
+            
+                 <div>
+                    <h2>
+                        Rome 
+                    </h2>
+                    <p>
+                        Rome is the capital city of Italy. 
+                    </p>
+                    <p>
+                        Rome has almost 3 million inhabitants. 
+                    </p>
+                 </div>
+            </div>
+
+            <br>
+
+            <p>
+                There are different methods for aligning elements side by side, all include some CSS styling. We will look at the most common methods: 
+            </p>
+            
+        </div>
+
+        <br>
+        <hr>
+
+        <br>
+
+        <h2>
+            Float 
+        </h2>
+
+        <div>
+            <p>
+                The CSS <span style="background-color:#f1f1f1;color:red;">float</span> property was not originally meant to align <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> elements side-by-side, but has been used for this purpose for many years. 
+                <br>
+                The CSS <span style="background-color:#f1f1f1;color:red;">float</span> property is used for positioning and formatting content and allow elements float next to each other instead of on top of each other. 
+                <br>
+                <b>Example:- </b>
+                <br>
+                How to use float to align div elements side by side: 
+                <br>
+                <a href="25. HTML Div-Example 4.html" title="Use float to align div elements side by side" target="_blank">Div Example 4</a>
+            </p>
+        </div>
+
+        <br>
+
+        <hr>
+
+        <br>
+
+        <h2>
+            Inline-block 
+        </h2>
+
+        <div>
+            If you change the <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> element's <span style="background-color:#f1f1f1;color:red;">display</span> property from <span style="background-color:#f1f1f1;color:red;">block</span> to <span style="background-color:#f1f1f1;color:red;">inline-block</span>, the <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> elements will no longer add a line break before and after, and will be displayed side by side instead of on top of each other. 
+            <br>
+            <b>Example:-</b> 
+            <br>
+            How to use display: inline-block to align div elements side by side: 
+            <br>
+            <a href="25. HTML Div-Example 5.html" title="Align div side by side using inline-block" target="_blank">Div Example 5</a>
+        </div>
+
+        <br>
+
+        <hr>
+
+        <br>
+
+        <h2>
+            Flex 
+        </h2>
+
+        <div>
+            The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout structure without using float or positioning. 
+            <br>
+            To make the CSS flex method work, surround the <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> elements with another <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> element and give it the status as a flex container. 
+            <br>
+            <b>Example:- </b>
+            <br>
+            How to use flex to align div elements side by side: 
+            <br>
+            <a href="25. HTML Div-Example 6.html" title="Align div using flex" target="_blank">Div Example 6</a>
+        </div>
+
+        <br>
+
+        <hr>
+
+        <br>
+
+        <h2>
+            Grid 
+        </h2>
+
+        <div>
+            The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning. 
+            <br>
+            Sounds almost the same as flex, but has the ability to define more than one row and position each row individually. 
+            <br>
+            The CSS grid method requires that you surround the <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> elements with another <span style="background-color:#f1f1f1;color:red;">&lt;div&gt;</span> element and give the status as a grid container, and you must specify the width of each column. 
+            <br>
+            <b>Example:- </b>
+            <br>
+            <a href="25. HTML Div-Example 7.html" title="Align div using grid" target="_blank">Div Example 7</a>
+        </div>
+
+        <br>
+
+        <a href="24. HTML Block and Inline.html" title="HTML Block and Inline" id="previousbutton">Previous</a>
+                
+        <a href="26. HTML Classes.html" title="HTML Classes" id="nextbutton">Next</a>
+
+        <br>
+        <br>
+    </body>
+</html>
